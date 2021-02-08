@@ -39,9 +39,11 @@
 module RAM_DUAL_PORT (
 	address_a,
 	address_b,
-	clock,
 	data_a,
 	data_b,
+	inclock,
+	out_aclr,
+	outclock,
 	wren_a,
 	wren_b,
 	q_a,
@@ -49,9 +51,11 @@ module RAM_DUAL_PORT (
 
 	input	[4:0]  address_a;
 	input	[4:0]  address_b;
-	input	  clock;
 	input	[31:0]  data_a;
 	input	[31:0]  data_b;
+	input	  inclock;
+	input	  out_aclr;
+	input	  outclock;
 	input	  wren_a;
 	input	  wren_b;
 	output	[31:0]  q_a;
@@ -59,7 +63,8 @@ module RAM_DUAL_PORT (
 `ifndef ALTERA_RESERVED_QIS
 // synopsys translate_off
 `endif
-	tri1	  clock;
+	tri1	  inclock;
+	tri0	  out_aclr;
 	tri0	  wren_a;
 	tri0	  wren_b;
 `ifndef ALTERA_RESERVED_QIS
@@ -72,9 +77,11 @@ module RAM_DUAL_PORT (
 	wire [31:0] q_b = sub_wire1[31:0];
 
 	altsyncram	altsyncram_component (
-				.clock0 (clock),
+				.clock0 (inclock),
 				.wren_a (wren_a),
+				.aclr1 (out_aclr),
 				.address_b (address_b),
+				.clock1 (outclock),
 				.data_b (data_b),
 				.wren_b (wren_b),
 				.address_a (address_a),
@@ -82,12 +89,10 @@ module RAM_DUAL_PORT (
 				.q_a (sub_wire0),
 				.q_b (sub_wire1),
 				.aclr0 (1'b0),
-				.aclr1 (1'b0),
 				.addressstall_a (1'b0),
 				.addressstall_b (1'b0),
 				.byteena_a (1'b1),
 				.byteena_b (1'b1),
-				.clock1 (1'b1),
 				.clocken0 (1'b1),
 				.clocken1 (1'b1),
 				.clocken2 (1'b1),
@@ -107,10 +112,10 @@ module RAM_DUAL_PORT (
 		altsyncram_component.numwords_a = 32,
 		altsyncram_component.numwords_b = 32,
 		altsyncram_component.operation_mode = "BIDIR_DUAL_PORT",
-		altsyncram_component.outdata_aclr_a = "NONE",
-		altsyncram_component.outdata_aclr_b = "NONE",
-		altsyncram_component.outdata_reg_a = "CLOCK0",
-		altsyncram_component.outdata_reg_b = "CLOCK0",
+		altsyncram_component.outdata_aclr_a = "CLEAR1",
+		altsyncram_component.outdata_aclr_b = "CLEAR1",
+		altsyncram_component.outdata_reg_a = "CLOCK1",
+		altsyncram_component.outdata_reg_b = "CLOCK1",
 		altsyncram_component.power_up_uninitialized = "FALSE",
 		altsyncram_component.read_during_write_mode_mixed_ports = "DONT_CARE",
 		altsyncram_component.read_during_write_mode_port_a = "NEW_DATA_NO_NBE_READ",
@@ -142,12 +147,12 @@ endmodule
 // Retrieval info: PRIVATE: CLOCK_ENABLE_OUTPUT_A NUMERIC "0"
 // Retrieval info: PRIVATE: CLOCK_ENABLE_OUTPUT_B NUMERIC "0"
 // Retrieval info: PRIVATE: CLRdata NUMERIC "0"
-// Retrieval info: PRIVATE: CLRq NUMERIC "0"
+// Retrieval info: PRIVATE: CLRq NUMERIC "1"
 // Retrieval info: PRIVATE: CLRrdaddress NUMERIC "0"
 // Retrieval info: PRIVATE: CLRrren NUMERIC "0"
 // Retrieval info: PRIVATE: CLRwraddress NUMERIC "0"
 // Retrieval info: PRIVATE: CLRwren NUMERIC "0"
-// Retrieval info: PRIVATE: Clock NUMERIC "0"
+// Retrieval info: PRIVATE: Clock NUMERIC "2"
 // Retrieval info: PRIVATE: Clock_A NUMERIC "0"
 // Retrieval info: PRIVATE: Clock_B NUMERIC "0"
 // Retrieval info: PRIVATE: IMPLEMENT_IN_LES NUMERIC "0"
@@ -163,7 +168,7 @@ endmodule
 // Retrieval info: PRIVATE: MEM_IN_BITS NUMERIC "0"
 // Retrieval info: PRIVATE: MIFfilename STRING ""
 // Retrieval info: PRIVATE: OPERATION_MODE NUMERIC "3"
-// Retrieval info: PRIVATE: OUTDATA_ACLR_B NUMERIC "0"
+// Retrieval info: PRIVATE: OUTDATA_ACLR_B NUMERIC "1"
 // Retrieval info: PRIVATE: OUTDATA_REG_B NUMERIC "1"
 // Retrieval info: PRIVATE: RAM_BLOCK_TYPE NUMERIC "0"
 // Retrieval info: PRIVATE: READ_DURING_WRITE_MODE_MIXED_PORTS NUMERIC "2"
@@ -200,10 +205,10 @@ endmodule
 // Retrieval info: CONSTANT: NUMWORDS_A NUMERIC "32"
 // Retrieval info: CONSTANT: NUMWORDS_B NUMERIC "32"
 // Retrieval info: CONSTANT: OPERATION_MODE STRING "BIDIR_DUAL_PORT"
-// Retrieval info: CONSTANT: OUTDATA_ACLR_A STRING "NONE"
-// Retrieval info: CONSTANT: OUTDATA_ACLR_B STRING "NONE"
-// Retrieval info: CONSTANT: OUTDATA_REG_A STRING "CLOCK0"
-// Retrieval info: CONSTANT: OUTDATA_REG_B STRING "CLOCK0"
+// Retrieval info: CONSTANT: OUTDATA_ACLR_A STRING "CLEAR1"
+// Retrieval info: CONSTANT: OUTDATA_ACLR_B STRING "CLEAR1"
+// Retrieval info: CONSTANT: OUTDATA_REG_A STRING "CLOCK1"
+// Retrieval info: CONSTANT: OUTDATA_REG_B STRING "CLOCK1"
 // Retrieval info: CONSTANT: POWER_UP_UNINITIALIZED STRING "FALSE"
 // Retrieval info: CONSTANT: READ_DURING_WRITE_MODE_MIXED_PORTS STRING "DONT_CARE"
 // Retrieval info: CONSTANT: READ_DURING_WRITE_MODE_PORT_A STRING "NEW_DATA_NO_NBE_READ"
@@ -217,16 +222,20 @@ endmodule
 // Retrieval info: CONSTANT: WRCONTROL_WRADDRESS_REG_B STRING "CLOCK0"
 // Retrieval info: USED_PORT: address_a 0 0 5 0 INPUT NODEFVAL "address_a[4..0]"
 // Retrieval info: USED_PORT: address_b 0 0 5 0 INPUT NODEFVAL "address_b[4..0]"
-// Retrieval info: USED_PORT: clock 0 0 0 0 INPUT VCC "clock"
 // Retrieval info: USED_PORT: data_a 0 0 32 0 INPUT NODEFVAL "data_a[31..0]"
 // Retrieval info: USED_PORT: data_b 0 0 32 0 INPUT NODEFVAL "data_b[31..0]"
+// Retrieval info: USED_PORT: inclock 0 0 0 0 INPUT VCC "inclock"
+// Retrieval info: USED_PORT: out_aclr 0 0 0 0 INPUT GND "out_aclr"
+// Retrieval info: USED_PORT: outclock 0 0 0 0 INPUT NODEFVAL "outclock"
 // Retrieval info: USED_PORT: q_a 0 0 32 0 OUTPUT NODEFVAL "q_a[31..0]"
 // Retrieval info: USED_PORT: q_b 0 0 32 0 OUTPUT NODEFVAL "q_b[31..0]"
 // Retrieval info: USED_PORT: wren_a 0 0 0 0 INPUT GND "wren_a"
 // Retrieval info: USED_PORT: wren_b 0 0 0 0 INPUT GND "wren_b"
+// Retrieval info: CONNECT: @aclr1 0 0 0 0 out_aclr 0 0 0 0
 // Retrieval info: CONNECT: @address_a 0 0 5 0 address_a 0 0 5 0
 // Retrieval info: CONNECT: @address_b 0 0 5 0 address_b 0 0 5 0
-// Retrieval info: CONNECT: @clock0 0 0 0 0 clock 0 0 0 0
+// Retrieval info: CONNECT: @clock0 0 0 0 0 inclock 0 0 0 0
+// Retrieval info: CONNECT: @clock1 0 0 0 0 outclock 0 0 0 0
 // Retrieval info: CONNECT: @data_a 0 0 32 0 data_a 0 0 32 0
 // Retrieval info: CONNECT: @data_b 0 0 32 0 data_b 0 0 32 0
 // Retrieval info: CONNECT: @wren_a 0 0 0 0 wren_a 0 0 0 0
@@ -236,7 +245,7 @@ endmodule
 // Retrieval info: GEN_FILE: TYPE_NORMAL RAM_DUAL_PORT.v TRUE
 // Retrieval info: GEN_FILE: TYPE_NORMAL RAM_DUAL_PORT.inc FALSE
 // Retrieval info: GEN_FILE: TYPE_NORMAL RAM_DUAL_PORT.cmp FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL RAM_DUAL_PORT.bsf TRUE FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL RAM_DUAL_PORT.bsf TRUE
 // Retrieval info: GEN_FILE: TYPE_NORMAL RAM_DUAL_PORT_inst.v FALSE
 // Retrieval info: GEN_FILE: TYPE_NORMAL RAM_DUAL_PORT_bb.v TRUE
 // Retrieval info: LIB_FILE: altera_mf

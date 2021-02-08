@@ -1,0 +1,17 @@
+# do CA_Project.do 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CA_Project
+# 
+# Top level modules:
+# 	CA_Project
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CA_Project_vlg_vec_tst
+# 
+# Top level modules:
+# 	CA_Project_vlg_vec_tst
+# vsim -L cycloneiv_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.CA_Project_vlg_vec_tst 
+# Loading work.CA_Project_vlg_vec_tst
+# Loading work.CA_Project
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# ** Note: $finish    : CA_Project.vt(50)
+#    Time: 1 us  Iteration: 0  Instance: /CA_Project_vlg_vec_tst

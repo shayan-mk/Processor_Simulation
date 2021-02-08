@@ -32,14 +32,12 @@
 //applicable agreement for further details.
 
 module RAM (
-	aclr,
 	address,
 	clock,
 	data,
 	wren,
 	q);
 
-	input	  aclr;
 	input	[15:0]  address;
 	input	  clock;
 	input	[31:0]  data;
@@ -48,7 +46,6 @@ module RAM (
 `ifndef ALTERA_RESERVED_QIS
 // synopsys translate_off
 `endif
-	tri0	  aclr;
 	tri1	  clock;
 `ifndef ALTERA_RESERVED_QIS
 // synopsys translate_on
@@ -63,7 +60,7 @@ endmodule
 // Retrieval info: PRIVATE: AclrAddr NUMERIC "0"
 // Retrieval info: PRIVATE: AclrByte NUMERIC "0"
 // Retrieval info: PRIVATE: AclrData NUMERIC "0"
-// Retrieval info: PRIVATE: AclrOutput NUMERIC "1"
+// Retrieval info: PRIVATE: AclrOutput NUMERIC "0"
 // Retrieval info: PRIVATE: BYTE_ENABLE NUMERIC "0"
 // Retrieval info: PRIVATE: BYTE_SIZE NUMERIC "8"
 // Retrieval info: PRIVATE: BlankMemory NUMERIC "1"
@@ -100,20 +97,18 @@ endmodule
 // Retrieval info: CONSTANT: LPM_TYPE STRING "altsyncram"
 // Retrieval info: CONSTANT: NUMWORDS_A NUMERIC "65536"
 // Retrieval info: CONSTANT: OPERATION_MODE STRING "SINGLE_PORT"
-// Retrieval info: CONSTANT: OUTDATA_ACLR_A STRING "CLEAR0"
+// Retrieval info: CONSTANT: OUTDATA_ACLR_A STRING "NONE"
 // Retrieval info: CONSTANT: OUTDATA_REG_A STRING "CLOCK0"
 // Retrieval info: CONSTANT: POWER_UP_UNINITIALIZED STRING "FALSE"
 // Retrieval info: CONSTANT: READ_DURING_WRITE_MODE_PORT_A STRING "NEW_DATA_NO_NBE_READ"
 // Retrieval info: CONSTANT: WIDTHAD_A NUMERIC "16"
 // Retrieval info: CONSTANT: WIDTH_A NUMERIC "32"
 // Retrieval info: CONSTANT: WIDTH_BYTEENA_A NUMERIC "1"
-// Retrieval info: USED_PORT: aclr 0 0 0 0 INPUT GND "aclr"
 // Retrieval info: USED_PORT: address 0 0 16 0 INPUT NODEFVAL "address[15..0]"
 // Retrieval info: USED_PORT: clock 0 0 0 0 INPUT VCC "clock"
 // Retrieval info: USED_PORT: data 0 0 32 0 INPUT NODEFVAL "data[31..0]"
 // Retrieval info: USED_PORT: q 0 0 32 0 OUTPUT NODEFVAL "q[31..0]"
 // Retrieval info: USED_PORT: wren 0 0 0 0 INPUT NODEFVAL "wren"
-// Retrieval info: CONNECT: @aclr0 0 0 0 0 aclr 0 0 0 0
 // Retrieval info: CONNECT: @address_a 0 0 16 0 address 0 0 16 0
 // Retrieval info: CONNECT: @clock0 0 0 0 0 clock 0 0 0 0
 // Retrieval info: CONNECT: @data_a 0 0 32 0 data 0 0 32 0
@@ -122,7 +117,7 @@ endmodule
 // Retrieval info: GEN_FILE: TYPE_NORMAL RAM.v TRUE
 // Retrieval info: GEN_FILE: TYPE_NORMAL RAM.inc FALSE
 // Retrieval info: GEN_FILE: TYPE_NORMAL RAM.cmp FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL RAM.bsf TRUE FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL RAM.bsf TRUE
 // Retrieval info: GEN_FILE: TYPE_NORMAL RAM_inst.v FALSE
 // Retrieval info: GEN_FILE: TYPE_NORMAL RAM_bb.v TRUE
 // Retrieval info: LIB_FILE: altera_mf
