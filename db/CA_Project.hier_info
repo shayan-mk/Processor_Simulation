@@ -20906,7 +20906,6 @@ datab[30] => mult_gcn:auto_generated.datab[30]
 datab[31] => mult_gcn:auto_generated.datab[31]
 sum[0] => ~NO_FANOUT~
 aclr => ~NO_FANOUT~
-sclr => ~NO_FANOUT~
 clock => ~NO_FANOUT~
 clken => ~NO_FANOUT~
 result[0] <= mult_gcn:auto_generated.result[0]

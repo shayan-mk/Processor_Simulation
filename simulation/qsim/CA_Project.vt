@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "02/09/2021 01:49:02"
+// Generated on "02/09/2021 12:29:49"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    CA_Project
 // 
@@ -31,8 +31,6 @@ module CA_Project_vlg_vec_tst();
 // general purpose registers
 reg pin_name_1;
 reg pin_name_2;
-reg pin_name_3;
-reg pin_name_4;
 reg pin_name_5;
 // wires                                               
 
@@ -41,8 +39,6 @@ CA_Project i1 (
 // port map - connection between master ports and signals/registers   
 	.pin_name_1(pin_name_1),
 	.pin_name_2(pin_name_2),
-	.pin_name_3(pin_name_3),
-	.pin_name_4(pin_name_4),
 	.pin_name_5(pin_name_5)
 );
 initial 
@@ -51,33 +47,19 @@ begin
 end 
 
 // pin_name_1
-initial
+always
 begin
 	pin_name_1 = 1'b0;
+	pin_name_1 = #5000 1'b1;
+	#5000;
 end 
 
 // pin_name_2
-initial
+always
 begin
 	pin_name_2 = 1'b0;
-end 
-
-// pin_name_3
-initial
-begin
-	pin_name_3 = 1'b0;
-end 
-
-// pin_name_4
-initial
-begin
-	pin_name_4 = 1'b0;
-end 
-
-// pin_name_5
-initial
-begin
-	pin_name_5 = 1'b0;
+	pin_name_2 = #10000 1'b1;
+	#10000;
 end 
 initial 
 begin 

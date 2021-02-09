@@ -1,4 +1,6 @@
 # do CA_Project.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module CA_Project
 # 
@@ -13,5 +15,11 @@
 # Loading work.CA_Project_vlg_vec_tst
 # Loading work.CA_Project
 # Loading cycloneiv_ver.cycloneiv_io_ibuf
-# ** Note: $finish    : CA_Project.vt(50)
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# 
+# Loading instances from CA_Project_v.sdo
+# Loading timing data from CA_Project_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /CA_Project_vlg_vec_tst File: CA_Project.vt
+# ** Note: $finish    : CA_Project.vt(46)
 #    Time: 1 us  Iteration: 0  Instance: /CA_Project_vlg_vec_tst

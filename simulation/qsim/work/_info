@@ -4,42 +4,42 @@ K3
 cModel Technology
 Z0 dD:\Desktop\CE\Courses\(3)Computer_Architecture\CA_Project\simulation\qsim
 vCA_Project
-Z1 IQG545:>BCHM^>GVS530PM3
-Z2 V8j4;MF;<LFI3jFJ7ARe:A3
-Z3 dD:\Desktop\CE\Courses\(3)Computer_Architecture\CA_Project\simulation\qsim
-Z4 w1612822743
+Z1 I7`X`Lkb@IjRE[SaX8=gS_0
+Z2 VdbEJi4BL=l`63_jaoWbPb3
+Z3 dD:\Desktop\CE\Courses\(3)Computer_Architecture\Processor_Simulation\simulation\qsim
+Z4 w1612861190
 Z5 8CA_Project.vo
 Z6 FCA_Project.vo
 L0 31
 Z7 OV;L;10.1d;51
 r1
 31
-Z8 o-work work -O0
-Z9 n@c@a_@project
+Z8 !s90 -work|work|CA_Project.vo|
+Z9 o-work work -O0
+Z10 n@c@a_@project
 !i10b 1
-Z10 !s100 ZH@WhD7dn]mEi5ADda;n52
+Z11 !s100 ^ehF167Y1[EZNE?ehQIl<0
 !s85 0
-Z11 !s108 1612822745.746000
-Z12 !s107 CA_Project.vo|
-Z13 !s90 -work|work|CA_Project.vo|
+Z12 !s108 1612861193.110000
+Z13 !s107 CA_Project.vo|
 !s101 -O0
 vCA_Project_vlg_vec_tst
 !i10b 1
-!s100 TTYV]LXboiaoDFk=LOaZE0
-I:_iok5McQC_CFIRoNX[Al0
-VOT^BKzPYQe8YdV2QVDC>;2
+!s100 8[P=^12TeMcmkZ65FX`?l2
+I;LgEiQm2e4CnRCh^o^5bM2
+Z14 VOT^BKzPYQe8YdV2QVDC>;2
 R3
-w1612822742
-8CA_Project.vt
-FCA_Project.vt
+w1612861189
+Z15 8CA_Project.vt
+Z16 FCA_Project.vt
 L0 29
 R7
 r1
 !s85 0
 31
-!s108 1612822746.005000
+!s108 1612861193.367000
 !s107 CA_Project.vt|
-!s90 -work|work|CA_Project.vt|
+Z17 !s90 -work|work|CA_Project.vt|
 !s101 -O0
-R8
-n@c@a_@project_vlg_vec_tst
+R9
+Z18 n@c@a_@project_vlg_vec_tst
