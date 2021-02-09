@@ -1,15 +1,6 @@
 |CA_Project
-pin_name_4 => LPM_FF:CTRL_BUF.clock
-pin_name_4 => LPM_FF:IMM_DATA_BUF.clock
-pin_name_4 => LPM_FF:CTRL_BUF2.clock
-pin_name_4 => LPM_FF:MEM_ADDR_BUF.clock
-pin_name_4 => LPM_FF:DATA_BUF_1.clock
-pin_name_4 => LPM_FF:DATA_BUF_2.clock
-pin_name_4 => LPM_FF:INSTR_BUF_1.clock
-pin_name_4 => LPM_FF:INSTR_BUF2.clock
-pin_name_4 => LPM_FF:MEM_DATA_BUF.clock
-pin_name_4 => LPM_FF:WB_REG.clock
-pin_name_4 => LPM_FF:WB_REG_2.clock
+pin_name_2 => lpm_decode0:inst21.data[1]
+pin_name_1 => lpm_decode0:inst21.data[0]
 pin_name_5 => LPM_FF:CTRL_BUF.aclr
 pin_name_5 => LPM_FF:PC.aclr
 pin_name_5 => LPM_FF:IMM_DATA_BUF.aclr
@@ -22,12 +13,6 @@ pin_name_5 => LPM_FF:INSTR_BUF2.aclr
 pin_name_5 => LPM_FF:MEM_DATA_BUF.aclr
 pin_name_5 => LPM_FF:WB_REG.aclr
 pin_name_5 => LPM_FF:WB_REG_2.aclr
-pin_name_3 => CTRL_ROM:MICRO_CTRL.clock
-pin_name_3 => RAM_DUAL_PORT:REG_FILE.outclock
-pin_name_2 => INSTR_ROM:INSTR_MEM.clock
-pin_name_2 => RAM_DUAL_PORT:REG_FILE.inclock
-pin_name_1 => LPM_FF:PC.clock
-pin_name_1 => RAM:DATA_MEM.clock
 
 
 |CA_Project|BUSMUX:BRANCH
@@ -443,6 +428,43 @@ q[6] <= dffs[6].DB_MAX_OUTPUT_PORT_TYPE
 q[7] <= dffs[7].DB_MAX_OUTPUT_PORT_TYPE
 q[8] <= dffs[8].DB_MAX_OUTPUT_PORT_TYPE
 q[9] <= dffs[9].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CA_Project|lpm_decode0:inst21
+data[0] => data[0].IN1
+data[1] => data[1].IN1
+eq0 <= lpm_decode:LPM_DECODE_component.eq
+eq1 <= lpm_decode:LPM_DECODE_component.eq
+eq2 <= lpm_decode:LPM_DECODE_component.eq
+eq3 <= lpm_decode:LPM_DECODE_component.eq
+
+
+|CA_Project|lpm_decode0:inst21|lpm_decode:LPM_DECODE_component
+data[0] => decode_3ff:auto_generated.data[0]
+data[1] => decode_3ff:auto_generated.data[1]
+enable => ~NO_FANOUT~
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+eq[0] <= decode_3ff:auto_generated.eq[0]
+eq[1] <= decode_3ff:auto_generated.eq[1]
+eq[2] <= decode_3ff:auto_generated.eq[2]
+eq[3] <= decode_3ff:auto_generated.eq[3]
+
+
+|CA_Project|lpm_decode0:inst21|lpm_decode:LPM_DECODE_component|decode_3ff:auto_generated
+data[0] => w_anode15w[1].IN1
+data[0] => w_anode1w[1].IN0
+data[0] => w_anode24w[1].IN0
+data[0] => w_anode33w[1].IN1
+data[1] => w_anode15w[2].IN0
+data[1] => w_anode1w[2].IN0
+data[1] => w_anode24w[2].IN1
+data[1] => w_anode33w[2].IN1
+eq[0] <= w_anode1w[2].DB_MAX_OUTPUT_PORT_TYPE
+eq[1] <= w_anode15w[2].DB_MAX_OUTPUT_PORT_TYPE
+eq[2] <= w_anode24w[2].DB_MAX_OUTPUT_PORT_TYPE
+eq[3] <= w_anode33w[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |CA_Project|CTRL_ROM:MICRO_CTRL
@@ -4388,38 +4410,38 @@ q_a[31] <= mux_isb:mux2.result[31]
 
 
 |CA_Project|INSTR_ROM:INSTR_MEM|altsyncram:altsyncram_component|altsyncram_cl91:auto_generated|decode_eca:rden_decode
-data[0] => w_anode1049w[1].IN0
-data[0] => w_anode1067w[1].IN1
-data[0] => w_anode1078w[1].IN0
-data[0] => w_anode1089w[1].IN1
-data[0] => w_anode1100w[1].IN0
-data[0] => w_anode1111w[1].IN1
-data[0] => w_anode1122w[1].IN0
-data[0] => w_anode1133w[1].IN1
-data[1] => w_anode1049w[2].IN0
-data[1] => w_anode1067w[2].IN0
-data[1] => w_anode1078w[2].IN1
-data[1] => w_anode1089w[2].IN1
-data[1] => w_anode1100w[2].IN0
-data[1] => w_anode1111w[2].IN0
-data[1] => w_anode1122w[2].IN1
-data[1] => w_anode1133w[2].IN1
-data[2] => w_anode1049w[3].IN0
-data[2] => w_anode1067w[3].IN0
-data[2] => w_anode1078w[3].IN0
-data[2] => w_anode1089w[3].IN0
-data[2] => w_anode1100w[3].IN1
-data[2] => w_anode1111w[3].IN1
-data[2] => w_anode1122w[3].IN1
-data[2] => w_anode1133w[3].IN1
-eq[0] <= w_anode1049w[3].DB_MAX_OUTPUT_PORT_TYPE
-eq[1] <= w_anode1067w[3].DB_MAX_OUTPUT_PORT_TYPE
-eq[2] <= w_anode1078w[3].DB_MAX_OUTPUT_PORT_TYPE
-eq[3] <= w_anode1089w[3].DB_MAX_OUTPUT_PORT_TYPE
-eq[4] <= w_anode1100w[3].DB_MAX_OUTPUT_PORT_TYPE
-eq[5] <= w_anode1111w[3].DB_MAX_OUTPUT_PORT_TYPE
-eq[6] <= w_anode1122w[3].DB_MAX_OUTPUT_PORT_TYPE
-eq[7] <= w_anode1133w[3].DB_MAX_OUTPUT_PORT_TYPE
+data[0] => w_anode1046w[1].IN0
+data[0] => w_anode1064w[1].IN1
+data[0] => w_anode1075w[1].IN0
+data[0] => w_anode1086w[1].IN1
+data[0] => w_anode1097w[1].IN0
+data[0] => w_anode1108w[1].IN1
+data[0] => w_anode1119w[1].IN0
+data[0] => w_anode1130w[1].IN1
+data[1] => w_anode1046w[2].IN0
+data[1] => w_anode1064w[2].IN0
+data[1] => w_anode1075w[2].IN1
+data[1] => w_anode1086w[2].IN1
+data[1] => w_anode1097w[2].IN0
+data[1] => w_anode1108w[2].IN0
+data[1] => w_anode1119w[2].IN1
+data[1] => w_anode1130w[2].IN1
+data[2] => w_anode1046w[3].IN0
+data[2] => w_anode1064w[3].IN0
+data[2] => w_anode1075w[3].IN0
+data[2] => w_anode1086w[3].IN0
+data[2] => w_anode1097w[3].IN1
+data[2] => w_anode1108w[3].IN1
+data[2] => w_anode1119w[3].IN1
+data[2] => w_anode1130w[3].IN1
+eq[0] <= w_anode1046w[3].DB_MAX_OUTPUT_PORT_TYPE
+eq[1] <= w_anode1064w[3].DB_MAX_OUTPUT_PORT_TYPE
+eq[2] <= w_anode1075w[3].DB_MAX_OUTPUT_PORT_TYPE
+eq[3] <= w_anode1086w[3].DB_MAX_OUTPUT_PORT_TYPE
+eq[4] <= w_anode1097w[3].DB_MAX_OUTPUT_PORT_TYPE
+eq[5] <= w_anode1108w[3].DB_MAX_OUTPUT_PORT_TYPE
+eq[6] <= w_anode1119w[3].DB_MAX_OUTPUT_PORT_TYPE
+eq[7] <= w_anode1130w[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |CA_Project|INSTR_ROM:INSTR_MEM|altsyncram:altsyncram_component|altsyncram_cl91:auto_generated|mux_isb:mux2
@@ -19994,6 +20016,7 @@ datab[30] => mult_gcn:auto_generated.datab[30]
 datab[31] => mult_gcn:auto_generated.datab[31]
 sum[0] => ~NO_FANOUT~
 aclr => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
 clock => ~NO_FANOUT~
 clken => ~NO_FANOUT~
 result[0] <= mult_gcn:auto_generated.result[0]
@@ -28656,38 +28679,38 @@ eq[7] <= w_anode1684w[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |CA_Project|RAM:DATA_MEM|altsyncram:altsyncram_component|altsyncram_kof1:auto_generated|decode_eca:rden_decode
-data[0] => w_anode1049w[1].IN0
-data[0] => w_anode1067w[1].IN1
-data[0] => w_anode1078w[1].IN0
-data[0] => w_anode1089w[1].IN1
-data[0] => w_anode1100w[1].IN0
-data[0] => w_anode1111w[1].IN1
-data[0] => w_anode1122w[1].IN0
-data[0] => w_anode1133w[1].IN1
-data[1] => w_anode1049w[2].IN0
-data[1] => w_anode1067w[2].IN0
-data[1] => w_anode1078w[2].IN1
-data[1] => w_anode1089w[2].IN1
-data[1] => w_anode1100w[2].IN0
-data[1] => w_anode1111w[2].IN0
-data[1] => w_anode1122w[2].IN1
-data[1] => w_anode1133w[2].IN1
-data[2] => w_anode1049w[3].IN0
-data[2] => w_anode1067w[3].IN0
-data[2] => w_anode1078w[3].IN0
-data[2] => w_anode1089w[3].IN0
-data[2] => w_anode1100w[3].IN1
-data[2] => w_anode1111w[3].IN1
-data[2] => w_anode1122w[3].IN1
-data[2] => w_anode1133w[3].IN1
-eq[0] <= w_anode1049w[3].DB_MAX_OUTPUT_PORT_TYPE
-eq[1] <= w_anode1067w[3].DB_MAX_OUTPUT_PORT_TYPE
-eq[2] <= w_anode1078w[3].DB_MAX_OUTPUT_PORT_TYPE
-eq[3] <= w_anode1089w[3].DB_MAX_OUTPUT_PORT_TYPE
-eq[4] <= w_anode1100w[3].DB_MAX_OUTPUT_PORT_TYPE
-eq[5] <= w_anode1111w[3].DB_MAX_OUTPUT_PORT_TYPE
-eq[6] <= w_anode1122w[3].DB_MAX_OUTPUT_PORT_TYPE
-eq[7] <= w_anode1133w[3].DB_MAX_OUTPUT_PORT_TYPE
+data[0] => w_anode1046w[1].IN0
+data[0] => w_anode1064w[1].IN1
+data[0] => w_anode1075w[1].IN0
+data[0] => w_anode1086w[1].IN1
+data[0] => w_anode1097w[1].IN0
+data[0] => w_anode1108w[1].IN1
+data[0] => w_anode1119w[1].IN0
+data[0] => w_anode1130w[1].IN1
+data[1] => w_anode1046w[2].IN0
+data[1] => w_anode1064w[2].IN0
+data[1] => w_anode1075w[2].IN1
+data[1] => w_anode1086w[2].IN1
+data[1] => w_anode1097w[2].IN0
+data[1] => w_anode1108w[2].IN0
+data[1] => w_anode1119w[2].IN1
+data[1] => w_anode1130w[2].IN1
+data[2] => w_anode1046w[3].IN0
+data[2] => w_anode1064w[3].IN0
+data[2] => w_anode1075w[3].IN0
+data[2] => w_anode1086w[3].IN0
+data[2] => w_anode1097w[3].IN1
+data[2] => w_anode1108w[3].IN1
+data[2] => w_anode1119w[3].IN1
+data[2] => w_anode1130w[3].IN1
+eq[0] <= w_anode1046w[3].DB_MAX_OUTPUT_PORT_TYPE
+eq[1] <= w_anode1064w[3].DB_MAX_OUTPUT_PORT_TYPE
+eq[2] <= w_anode1075w[3].DB_MAX_OUTPUT_PORT_TYPE
+eq[3] <= w_anode1086w[3].DB_MAX_OUTPUT_PORT_TYPE
+eq[4] <= w_anode1097w[3].DB_MAX_OUTPUT_PORT_TYPE
+eq[5] <= w_anode1108w[3].DB_MAX_OUTPUT_PORT_TYPE
+eq[6] <= w_anode1119w[3].DB_MAX_OUTPUT_PORT_TYPE
+eq[7] <= w_anode1130w[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |CA_Project|RAM:DATA_MEM|altsyncram:altsyncram_component|altsyncram_kof1:auto_generated|mux_isb:mux2
