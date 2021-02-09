@@ -132,38 +132,6 @@ https://fpgasoftware.intel.com/eula.
 	(annotation_block (parameter)(rect 872 176 1009 221))
 )
 (symbol
-	(rect -72 488 48 544)
-	(text "LPM_INV" (rect 22 0 90 16)(font "Arial" (font_size 10)))
-	(text "inst9" (rect 3 45 27 58)(font "Intel Clear" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "data[LPM_WIDTH-1..0]" (rect 5 19 137 32)(font "Arial" (font_size 8)))
-		(text "data[]" (rect 5 19 38 32)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 45 32)(line_width 3))
-	)
-	(port
-		(pt 120 32)
-		(output)
-		(text "result[LPM_WIDTH-1..0]" (rect 83 19 221 32)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 83 19 121 32)(font "Arial" (font_size 8)))
-		(line (pt 71 32)(pt 120 32)(line_width 3))
-	)
-	(parameter
-		"LPM_WIDTH"
-		""
-		"Number of gates, any integer > 0"
-		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
-	)
-	(drawing
-		(line (pt 45 40)(pt 45 23))
-		(line (pt 45 41)(pt 63 32))
-		(line (pt 45 23)(pt 63 32))
-		(circle (rect 63 28 71 36))
-	)
-	(annotation_block (parameter)(rect -80 456 56 488))
-)
-(symbol
 	(rect -536 480 -376 576)
 	(text "lpm_add_to_129" (rect 22 0 141 16)(font "Arial" (font_size 10)))
 	(text "inst1" (rect 8 80 32 91)(font "Arial" ))
@@ -415,54 +383,6 @@ https://fpgasoftware.intel.com/eula.
 	(annotation_block (parameter)(rect -432 328 -260 373))
 )
 (symbol
-	(rect 728 472 840 560)
-	(text "BUSMUX" (rect 28 0 96 16)(font "Arial" (font_size 10)))
-	(text "inst7" (rect 3 77 27 90)(font "Intel Clear" ))
-	(port
-		(pt 0 64)
-		(input)
-		(text "datab[WIDTH-1..0]" (rect 6 51 112 64)(font "Arial" (font_size 8)))
-		(text "datab[]" (rect 6 51 46 64)(font "Arial" (font_size 8)))
-		(line (pt 0 64)(pt 44 64)(line_width 3))
-	)
-	(port
-		(pt 56 88)
-		(input)
-		(text "sel" (rect 59 70 76 83)(font "Arial" (font_size 8)))
-		(text "sel" (rect 59 70 76 83)(font "Arial" (font_size 8)))
-		(line (pt 56 88)(pt 56 72))
-	)
-	(port
-		(pt 0 32)
-		(input)
-		(text "dataa[WIDTH-1..0]" (rect 6 19 112 32)(font "Arial" (font_size 8)))
-		(text "dataa[]" (rect 6 19 46 32)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 44 32)(line_width 3))
-	)
-	(port
-		(pt 112 48)
-		(output)
-		(text "result[WIDTH-1..0]" (rect 75 35 181 48)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 48)(font "Arial" (font_size 8)))
-		(line (pt 68 48)(pt 112 48)(line_width 3))
-	)
-	(parameter
-		"WIDTH"
-		""
-		"Width of I/O, any integer > 0"
-		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
-	)
-	(drawing
-		(text "0" (rect 52 31 60 41)(font "Arial" (font_size 6)))
-		(text "1" (rect 52 55 60 65)(font "Arial" (font_size 6)))
-		(line (pt 68 64)(pt 68 32))
-		(line (pt 44 80)(pt 44 16))
-		(line (pt 44 16)(pt 68 32))
-		(line (pt 44 80)(pt 68 64))
-	)
-	(annotation_block (parameter)(rect 776 408 904 440))
-)
-(symbol
 	(rect 712 568 776 616)
 	(text "OR3" (rect 1 0 23 10)(font "Arial" (font_size 6)))
 	(text "inst12" (rect 3 37 34 50)(font "Intel Clear" ))
@@ -501,6 +421,86 @@ https://fpgasoftware.intel.com/eula.
 		(arc (pt 49 24)(pt 25 13)(rect -6 13 57 76))
 		(arc (pt 25 35)(pt 49 24)(rect -6 -27 57 36))
 	)
+)
+(symbol
+	(rect -72 488 48 544)
+	(text "LPM_INV" (rect 22 0 90 16)(font "Arial" (font_size 10)))
+	(text "inst9" (rect 3 45 27 58)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "data[LPM_WIDTH-1..0]" (rect 5 19 137 32)(font "Arial" (font_size 8)))
+		(text "data[]" (rect 5 19 38 32)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 45 32)(line_width 3))
+	)
+	(port
+		(pt 120 32)
+		(output)
+		(text "result[LPM_WIDTH-1..0]" (rect 83 19 221 32)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 83 19 121 32)(font "Arial" (font_size 8)))
+		(line (pt 71 32)(pt 120 32)(line_width 3))
+	)
+	(parameter
+		"LPM_WIDTH"
+		"23"
+		"Number of gates, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
+	)
+	(drawing
+		(line (pt 45 40)(pt 45 23))
+		(line (pt 45 41)(pt 63 32))
+		(line (pt 45 23)(pt 63 32))
+		(circle (rect 63 28 71 36))
+	)
+	(annotation_block (parameter)(rect -80 456 51 486))
+)
+(symbol
+	(rect 728 472 840 560)
+	(text "BUSMUX" (rect 28 0 96 16)(font "Arial" (font_size 10)))
+	(text "inst7" (rect 3 77 27 90)(font "Intel Clear" ))
+	(port
+		(pt 0 64)
+		(input)
+		(text "datab[WIDTH-1..0]" (rect 6 51 112 64)(font "Arial" (font_size 8)))
+		(text "datab[]" (rect 6 51 46 64)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 44 64)(line_width 3))
+	)
+	(port
+		(pt 56 88)
+		(input)
+		(text "sel" (rect 59 70 76 83)(font "Arial" (font_size 8)))
+		(text "sel" (rect 59 70 76 83)(font "Arial" (font_size 8)))
+		(line (pt 56 88)(pt 56 72))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "dataa[WIDTH-1..0]" (rect 6 19 112 32)(font "Arial" (font_size 8)))
+		(text "dataa[]" (rect 6 19 46 32)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 44 32)(line_width 3))
+	)
+	(port
+		(pt 112 48)
+		(output)
+		(text "result[WIDTH-1..0]" (rect 75 35 181 48)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 48)(font "Arial" (font_size 8)))
+		(line (pt 68 48)(pt 112 48)(line_width 3))
+	)
+	(parameter
+		"WIDTH"
+		"23"
+		"Width of I/O, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
+	)
+	(drawing
+		(text "0" (rect 52 31 60 41)(font "Arial" (font_size 6)))
+		(text "1" (rect 52 55 60 65)(font "Arial" (font_size 6)))
+		(line (pt 68 64)(pt 68 32))
+		(line (pt 44 80)(pt 44 16))
+		(line (pt 44 16)(pt 68 32))
+		(line (pt 44 80)(pt 68 64))
+	)
+	(annotation_block (parameter)(rect 776 408 898 438))
 )
 (connector
 	(pt 1024 400)
@@ -616,16 +616,6 @@ https://fpgasoftware.intel.com/eula.
 	(bus)
 )
 (connector
-	(text "data[31..23]" (rect 547 680 606 691)(font "Arial" ))
-	(pt 624 696)
-	(pt 520 696)
-)
-(connector
-	(text "result[31..23]" (rect 680 680 743 691)(font "Arial" ))
-	(pt 672 696)
-	(pt 768 696)
-)
-(connector
 	(pt 848 520)
 	(pt 848 528)
 	(bus)
@@ -650,29 +640,6 @@ https://fpgasoftware.intel.com/eula.
 	(pt 728 536)
 	(pt 608 536)
 	(bus)
-)
-(connector
-	(pt 608 536)
-	(pt 608 632)
-	(bus)
-)
-(connector
-	(pt 608 632)
-	(pt 520 632)
-)
-(connector
-	(text "and[1][22..0]" (rect 680 640 741 651)(font "Arial" ))
-	(pt 672 656)
-	(pt 768 656)
-)
-(connector
-	(pt 608 632)
-	(pt 608 656)
-)
-(connector
-	(text "data[22..0]" (rect 547 640 600 651)(font "Arial" ))
-	(pt 608 656)
-	(pt 624 656)
 )
 (connector
 	(pt 776 592)
@@ -724,5 +691,44 @@ https://fpgasoftware.intel.com/eula.
 	(text "exp_pos[7]" (rect 670 584 727 597)(font "Intel Clear" ))
 	(pt 712 600)
 	(pt 640 600)
+)
+(connector
+	(pt 608 632)
+	(pt 520 632)
+	(bus)
+)
+(connector
+	(text "data[31..23]" (rect 547 680 606 691)(font "Arial" ))
+	(pt 624 696)
+	(pt 520 696)
+	(bus)
+)
+(connector
+	(text "result[31..23]" (rect 680 680 743 691)(font "Arial" ))
+	(pt 672 696)
+	(pt 768 696)
+	(bus)
+)
+(connector
+	(text "and[1][22..0]" (rect 680 640 741 651)(font "Arial" ))
+	(pt 672 656)
+	(pt 768 656)
+	(bus)
+)
+(connector
+	(pt 608 536)
+	(pt 608 632)
+	(bus)
+)
+(connector
+	(pt 608 632)
+	(pt 608 656)
+	(bus)
+)
+(connector
+	(text "data[22..0]" (rect 547 640 600 651)(font "Arial" ))
+	(pt 608 656)
+	(pt 624 656)
+	(bus)
 )
 (junction (pt 608 632))
