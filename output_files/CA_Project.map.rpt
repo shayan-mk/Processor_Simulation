@@ -1,5 +1,5 @@
 Analysis & Elaboration report for CA_Project
-Tue Feb  9 02:35:43 2021
+Tue Feb  9 12:10:04 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -36,38 +36,42 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  28. Parameter Settings for User Entity Instance: BUSMUX:inst50
  29. Parameter Settings for User Entity Instance: LPM_FF:DATA_BUF_2
  30. Parameter Settings for User Entity Instance: ALU_SHIFT_LEFT:inst10|lpm_clshift:LPM_CLSHIFT_component
- 31. Parameter Settings for User Entity Instance: LPM_FF:INSTR_BUF_1
- 32. Parameter Settings for User Entity Instance: ALU_SHIFT_RIGHT:inst11|lpm_clshift:LPM_CLSHIFT_component
- 33. Parameter Settings for User Entity Instance: ALU_ROTATE_LEFT:inst12|lpm_clshift:LPM_CLSHIFT_component
- 34. Parameter Settings for User Entity Instance: ALU_ROTATE_RIGHT:inst13|lpm_clshift:LPM_CLSHIFT_component
- 35. Parameter Settings for User Entity Instance: ALU_CONST_ZERO:inst14|lpm_constant:LPM_CONSTANT_component
- 36. Parameter Settings for User Entity Instance: ALU_COMPARE_UNSIGNED:inst15|lpm_compare:LPM_COMPARE_component
- 37. Parameter Settings for User Entity Instance: ALU_ADD:inst1|lpm_add_sub:LPM_ADD_SUB_component
- 38. Parameter Settings for User Entity Instance: ALU_SUB:inst23|lpm_add_sub:LPM_ADD_SUB_component
- 39. Parameter Settings for User Entity Instance: ALU_MUL:inst22|lpm_mult:lpm_mult_component
- 40. Parameter Settings for User Entity Instance: ALU_DEVIDE:inst18|lpm_divide:LPM_DIVIDE_component
- 41. Parameter Settings for User Entity Instance: LPM_INV:inst6
- 42. Parameter Settings for User Entity Instance: LPM_AND:inst8
- 43. Parameter Settings for User Entity Instance: ALU_MIN_MAX_MUX:inst3|lpm_mux:LPM_MUX_component
- 44. Parameter Settings for User Entity Instance: ALU_COMPARE:inst2|lpm_compare:LPM_COMPARE_component
- 45. Parameter Settings for User Entity Instance: ALU_MIN_MAX_MUX:inst4|lpm_mux:LPM_MUX_component
- 46. Parameter Settings for User Entity Instance: LPM_INV:inst5
- 47. Parameter Settings for User Entity Instance: BUSMUX:WB_MUX36
- 48. Parameter Settings for User Entity Instance: LPM_FF:INSTR_BUF2
- 49. Parameter Settings for User Entity Instance: RAM:DATA_MEM|altsyncram:altsyncram_component
- 50. Parameter Settings for User Entity Instance: LPM_FF:MEM_DATA_BUF
- 51. Parameter Settings for User Entity Instance: lpm_mux0:LB_SEL|lpm_mux:LPM_MUX_component
- 52. Parameter Settings for User Entity Instance: BUSMUX:SING_EXTEND_2
- 53. Parameter Settings for User Entity Instance: BUSMUX:BRANCH31
- 54. Parameter Settings for User Entity Instance: lpm_compare0:inst|lpm_compare:LPM_COMPARE_component
- 55. Parameter Settings for User Entity Instance: lpm_add_sub0:PC_INC33|lpm_add_sub:LPM_ADD_SUB_component
- 56. Parameter Settings for User Entity Instance: BUSMUX:BRANCH32
- 57. Parameter Settings for User Entity Instance: LPM_FF:WB_REG
- 58. Parameter Settings for User Entity Instance: LPM_FF:WB_REG_2
- 59. altsyncram Parameter Settings by Entity Instance
- 60. lpm_mult Parameter Settings by Entity Instance
- 61. Analysis & Elaboration Settings
- 62. Analysis & Elaboration Messages
+ 31. Parameter Settings for User Entity Instance: BUSMUX:inst20
+ 32. Parameter Settings for User Entity Instance: alu_forward_compare_a:inst27|lpm_compare:LPM_COMPARE_component
+ 33. Parameter Settings for User Entity Instance: LPM_FF:WB_REG_2
+ 34. Parameter Settings for User Entity Instance: LPM_FF:WB_REG
+ 35. Parameter Settings for User Entity Instance: LPM_FF:INSTR_BUF_1
+ 36. Parameter Settings for User Entity Instance: ALU_SHIFT_RIGHT:inst11|lpm_clshift:LPM_CLSHIFT_component
+ 37. Parameter Settings for User Entity Instance: ALU_ROTATE_LEFT:inst12|lpm_clshift:LPM_CLSHIFT_component
+ 38. Parameter Settings for User Entity Instance: ALU_ROTATE_RIGHT:inst13|lpm_clshift:LPM_CLSHIFT_component
+ 39. Parameter Settings for User Entity Instance: ALU_CONST_ZERO:inst14|lpm_constant:LPM_CONSTANT_component
+ 40. Parameter Settings for User Entity Instance: ALU_COMPARE_UNSIGNED:inst15|lpm_compare:LPM_COMPARE_component
+ 41. Parameter Settings for User Entity Instance: BUSMUX:inst29
+ 42. Parameter Settings for User Entity Instance: alu_forward_compare_a:inst28|lpm_compare:LPM_COMPARE_component
+ 43. Parameter Settings for User Entity Instance: ALU_ADD:inst1|lpm_add_sub:LPM_ADD_SUB_component
+ 44. Parameter Settings for User Entity Instance: ALU_SUB:inst23|lpm_add_sub:LPM_ADD_SUB_component
+ 45. Parameter Settings for User Entity Instance: ALU_MUL:inst22|lpm_mult:lpm_mult_component
+ 46. Parameter Settings for User Entity Instance: ALU_DEVIDE:inst18|lpm_divide:LPM_DIVIDE_component
+ 47. Parameter Settings for User Entity Instance: LPM_INV:inst6
+ 48. Parameter Settings for User Entity Instance: LPM_AND:inst8
+ 49. Parameter Settings for User Entity Instance: ALU_MIN_MAX_MUX:inst3|lpm_mux:LPM_MUX_component
+ 50. Parameter Settings for User Entity Instance: ALU_COMPARE:inst2|lpm_compare:LPM_COMPARE_component
+ 51. Parameter Settings for User Entity Instance: ALU_MIN_MAX_MUX:inst4|lpm_mux:LPM_MUX_component
+ 52. Parameter Settings for User Entity Instance: LPM_INV:inst5
+ 53. Parameter Settings for User Entity Instance: BUSMUX:WB_MUX36
+ 54. Parameter Settings for User Entity Instance: LPM_FF:INSTR_BUF2
+ 55. Parameter Settings for User Entity Instance: RAM:DATA_MEM|altsyncram:altsyncram_component
+ 56. Parameter Settings for User Entity Instance: LPM_FF:MEM_DATA_BUF
+ 57. Parameter Settings for User Entity Instance: lpm_mux0:LB_SEL|lpm_mux:LPM_MUX_component
+ 58. Parameter Settings for User Entity Instance: BUSMUX:SING_EXTEND_2
+ 59. Parameter Settings for User Entity Instance: BUSMUX:BRANCH31
+ 60. Parameter Settings for User Entity Instance: lpm_compare0:inst|lpm_compare:LPM_COMPARE_component
+ 61. Parameter Settings for User Entity Instance: lpm_add_sub0:PC_INC33|lpm_add_sub:LPM_ADD_SUB_component
+ 62. Parameter Settings for User Entity Instance: BUSMUX:BRANCH32
+ 63. altsyncram Parameter Settings by Entity Instance
+ 64. lpm_mult Parameter Settings by Entity Instance
+ 65. Analysis & Elaboration Settings
+ 66. Analysis & Elaboration Messages
 
 
 
@@ -94,7 +98,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                   ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Tue Feb  9 02:35:43 2021       ;
+; Analysis & Elaboration Status      ; Successful - Tue Feb  9 12:10:04 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; CA_Project                                  ;
 ; Top-level Entity Name              ; CA_Project                                  ;
@@ -131,24 +135,26 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration IP Cores Summary                                                                               ;
-+--------+--------------+---------+--------------+--------------+------------------------------------+------------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                    ; IP Include File  ;
-+--------+--------------+---------+--------------+--------------+------------------------------------+------------------+
-; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |CA_Project|zero:const_0           ; zero.v           ;
-; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |CA_Project|one:const_1            ; one.v            ;
-; Altera ; RAM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |CA_Project|RAM:DATA_MEM           ; RAM.v            ;
-; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |CA_Project|lpm_compare0:inst      ; lpm_compare0.vhd ;
-; Altera ; LPM_ADD_SUB  ; 13.0    ; N/A          ; N/A          ; |CA_Project|ADD4:inst17            ; ADD4.v           ;
-; Altera ; LPM_DECODE   ; 13.0    ; N/A          ; N/A          ; |CA_Project|lpm_decode0:inst21     ; lpm_decode0.v    ;
-; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |CA_Project|lpm_mux1:inst35        ; lpm_mux1.vhd     ;
-; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |CA_Project|INSTR_ROM:INSTR_MEM    ; INSTR_ROM.v      ;
-; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |CA_Project|lpm_mux0:LB_SEL        ; lpm_mux0.vhd     ;
-; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |CA_Project|CTRL_ROM:MICRO_CTRL    ; CTRL_ROM.v       ;
-; Altera ; LPM_ADD_SUB  ; 13.0    ; N/A          ; N/A          ; |CA_Project|lpm_add_sub0:PC_INC33  ; lpm_add_sub0.vhd ;
-; Altera ; RAM: 2-PORT  ; 13.0    ; N/A          ; N/A          ; |CA_Project|RAM_DUAL_PORT:REG_FILE ; RAM_DUAL_PORT.v  ;
-+--------+--------------+---------+--------------+--------------+------------------------------------+------------------+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Elaboration IP Cores Summary                                                                                            ;
++--------+--------------+---------+--------------+--------------+------------------------------------------+-------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                          ; IP Include File         ;
++--------+--------------+---------+--------------+--------------+------------------------------------------+-------------------------+
+; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |CA_Project|zero:const_0                 ; zero.v                  ;
+; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |CA_Project|one:const_1                  ; one.v                   ;
+; Altera ; RAM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |CA_Project|RAM:DATA_MEM                 ; RAM.v                   ;
+; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |CA_Project|lpm_compare0:inst            ; lpm_compare0.vhd        ;
+; Altera ; LPM_ADD_SUB  ; 13.0    ; N/A          ; N/A          ; |CA_Project|ADD4:inst17                  ; ADD4.v                  ;
+; Altera ; LPM_DECODE   ; 13.0    ; N/A          ; N/A          ; |CA_Project|lpm_decode0:inst21           ; lpm_decode0.v           ;
+; Altera ; LPM_COMPARE  ; 20.1    ; N/A          ; N/A          ; |CA_Project|alu_forward_compare_a:inst27 ; alu_forward_compare_a.v ;
+; Altera ; LPM_COMPARE  ; 20.1    ; N/A          ; N/A          ; |CA_Project|alu_forward_compare_a:inst28 ; alu_forward_compare_a.v ;
+; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |CA_Project|lpm_mux1:inst35              ; lpm_mux1.vhd            ;
+; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |CA_Project|INSTR_ROM:INSTR_MEM          ; INSTR_ROM.v             ;
+; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |CA_Project|lpm_mux0:LB_SEL              ; lpm_mux0.vhd            ;
+; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |CA_Project|CTRL_ROM:MICRO_CTRL          ; CTRL_ROM.v              ;
+; Altera ; LPM_ADD_SUB  ; 13.0    ; N/A          ; N/A          ; |CA_Project|lpm_add_sub0:PC_INC33        ; lpm_add_sub0.vhd        ;
+; Altera ; RAM: 2-PORT  ; 13.0    ; N/A          ; N/A          ; |CA_Project|RAM_DUAL_PORT:REG_FILE       ; RAM_DUAL_PORT.v         ;
++--------+--------------+---------+--------------+--------------+------------------------------------------+-------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------+
@@ -673,6 +679,78 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: BUSMUX:inst20 ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; WIDTH          ; 32    ; Untyped                           ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu_forward_compare_a:inst27|lpm_compare:LPM_COMPARE_component ;
++------------------------+---------------+--------------------------------------------------------------------+
+; Parameter Name         ; Value         ; Type                                                               ;
++------------------------+---------------+--------------------------------------------------------------------+
+; lpm_width              ; 5             ; Signed Integer                                                     ;
+; LPM_REPRESENTATION     ; UNSIGNED      ; Untyped                                                            ;
+; LPM_PIPELINE           ; 0             ; Untyped                                                            ;
+; CHAIN_SIZE             ; 8             ; Untyped                                                            ;
+; ONE_INPUT_IS_CONSTANT  ; NO            ; Untyped                                                            ;
+; CARRY_CHAIN            ; MANUAL        ; Untyped                                                            ;
+; CASCADE_CHAIN          ; MANUAL        ; Untyped                                                            ;
+; CARRY_CHAIN_LENGTH     ; 48            ; CARRY_CHAIN_LENGTH                                                 ;
+; CASCADE_CHAIN_LENGTH   ; 2             ; CASCADE_CHAIN_LENGTH                                               ;
+; DEVICE_FAMILY          ; Cyclone IV GX ; Untyped                                                            ;
+; CBXI_PARAMETER         ; cmpr_mpg      ; Untyped                                                            ;
+; AUTO_CARRY_CHAINS      ; ON            ; AUTO_CARRY                                                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF           ; IGNORE_CARRY                                                       ;
+; AUTO_CASCADE_CHAINS    ; ON            ; AUTO_CASCADE                                                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF           ; IGNORE_CASCADE                                                     ;
++------------------------+---------------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LPM_FF:WB_REG_2 ;
++------------------------+---------------+---------------------+
+; Parameter Name         ; Value         ; Type                ;
++------------------------+---------------+---------------------+
+; LPM_WIDTH              ; 5             ; Signed Integer      ;
+; LPM_AVALUE             ; UNUSED        ; Untyped             ;
+; LPM_SVALUE             ; UNUSED        ; Untyped             ;
+; LPM_FFTYPE             ; DFF           ; Untyped             ;
+; DEVICE_FAMILY          ; Cyclone IV GX ; Untyped             ;
+; CBXI_PARAMETER         ; NOTHING       ; Untyped             ;
+; AUTO_CARRY_CHAINS      ; ON            ; AUTO_CARRY          ;
+; IGNORE_CARRY_BUFFERS   ; OFF           ; IGNORE_CARRY        ;
+; AUTO_CASCADE_CHAINS    ; ON            ; AUTO_CASCADE        ;
+; IGNORE_CASCADE_BUFFERS ; OFF           ; IGNORE_CASCADE      ;
++------------------------+---------------+---------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LPM_FF:WB_REG ;
++------------------------+---------------+-------------------+
+; Parameter Name         ; Value         ; Type              ;
++------------------------+---------------+-------------------+
+; LPM_WIDTH              ; 5             ; Signed Integer    ;
+; LPM_AVALUE             ; UNUSED        ; Untyped           ;
+; LPM_SVALUE             ; UNUSED        ; Untyped           ;
+; LPM_FFTYPE             ; DFF           ; Untyped           ;
+; DEVICE_FAMILY          ; Cyclone IV GX ; Untyped           ;
+; CBXI_PARAMETER         ; NOTHING       ; Untyped           ;
+; AUTO_CARRY_CHAINS      ; ON            ; AUTO_CARRY        ;
+; IGNORE_CARRY_BUFFERS   ; OFF           ; IGNORE_CARRY      ;
+; AUTO_CASCADE_CHAINS    ; ON            ; AUTO_CASCADE      ;
+; IGNORE_CASCADE_BUFFERS ; OFF           ; IGNORE_CASCADE    ;
++------------------------+---------------+-------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-----------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: LPM_FF:INSTR_BUF_1 ;
 +------------------------+---------------+------------------------+
@@ -768,6 +846,40 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; AUTO_CASCADE_CHAINS    ; ON            ; AUTO_CASCADE                                                      ;
 ; IGNORE_CASCADE_BUFFERS ; OFF           ; IGNORE_CASCADE                                                    ;
 +------------------------+---------------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: BUSMUX:inst29 ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; WIDTH          ; 32    ; Untyped                           ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu_forward_compare_a:inst28|lpm_compare:LPM_COMPARE_component ;
++------------------------+---------------+--------------------------------------------------------------------+
+; Parameter Name         ; Value         ; Type                                                               ;
++------------------------+---------------+--------------------------------------------------------------------+
+; lpm_width              ; 5             ; Signed Integer                                                     ;
+; LPM_REPRESENTATION     ; UNSIGNED      ; Untyped                                                            ;
+; LPM_PIPELINE           ; 0             ; Untyped                                                            ;
+; CHAIN_SIZE             ; 8             ; Untyped                                                            ;
+; ONE_INPUT_IS_CONSTANT  ; NO            ; Untyped                                                            ;
+; CARRY_CHAIN            ; MANUAL        ; Untyped                                                            ;
+; CASCADE_CHAIN          ; MANUAL        ; Untyped                                                            ;
+; CARRY_CHAIN_LENGTH     ; 48            ; CARRY_CHAIN_LENGTH                                                 ;
+; CASCADE_CHAIN_LENGTH   ; 2             ; CASCADE_CHAIN_LENGTH                                               ;
+; DEVICE_FAMILY          ; Cyclone IV GX ; Untyped                                                            ;
+; CBXI_PARAMETER         ; cmpr_mpg      ; Untyped                                                            ;
+; AUTO_CARRY_CHAINS      ; ON            ; AUTO_CARRY                                                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF           ; IGNORE_CARRY                                                       ;
+; AUTO_CASCADE_CHAINS    ; ON            ; AUTO_CASCADE                                                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF           ; IGNORE_CASCADE                                                     ;
++------------------------+---------------+--------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1196,44 +1308,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: LPM_FF:WB_REG ;
-+------------------------+---------------+-------------------+
-; Parameter Name         ; Value         ; Type              ;
-+------------------------+---------------+-------------------+
-; LPM_WIDTH              ; 5             ; Signed Integer    ;
-; LPM_AVALUE             ; UNUSED        ; Untyped           ;
-; LPM_SVALUE             ; UNUSED        ; Untyped           ;
-; LPM_FFTYPE             ; DFF           ; Untyped           ;
-; DEVICE_FAMILY          ; Cyclone IV GX ; Untyped           ;
-; CBXI_PARAMETER         ; NOTHING       ; Untyped           ;
-; AUTO_CARRY_CHAINS      ; ON            ; AUTO_CARRY        ;
-; IGNORE_CARRY_BUFFERS   ; OFF           ; IGNORE_CARRY      ;
-; AUTO_CASCADE_CHAINS    ; ON            ; AUTO_CASCADE      ;
-; IGNORE_CASCADE_BUFFERS ; OFF           ; IGNORE_CASCADE    ;
-+------------------------+---------------+-------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: LPM_FF:WB_REG_2 ;
-+------------------------+---------------+---------------------+
-; Parameter Name         ; Value         ; Type                ;
-+------------------------+---------------+---------------------+
-; LPM_WIDTH              ; 5             ; Signed Integer      ;
-; LPM_AVALUE             ; UNUSED        ; Untyped             ;
-; LPM_SVALUE             ; UNUSED        ; Untyped             ;
-; LPM_FFTYPE             ; DFF           ; Untyped             ;
-; DEVICE_FAMILY          ; Cyclone IV GX ; Untyped             ;
-; CBXI_PARAMETER         ; NOTHING       ; Untyped             ;
-; AUTO_CARRY_CHAINS      ; ON            ; AUTO_CARRY          ;
-; IGNORE_CARRY_BUFFERS   ; OFF           ; IGNORE_CARRY        ;
-; AUTO_CASCADE_CHAINS    ; ON            ; AUTO_CASCADE        ;
-; IGNORE_CASCADE_BUFFERS ; OFF           ; IGNORE_CASCADE      ;
-+------------------------+---------------+---------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +----------------------------------------------------------------------------------------------------+
 ; altsyncram Parameter Settings by Entity Instance                                                   ;
 +-------------------------------------------+--------------------------------------------------------+
@@ -1398,84 +1472,86 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Feb  9 02:35:32 2021
+    Info: Processing started: Tue Feb  9 12:09:50 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CA_Project -c CA_Project --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file CA_Project.bdf
     Info (12023): Found entity 1: CA_Project
 Info (12021): Found 2 design units, including 1 entities, in source file lpm_shiftreg0.vhd
-    Info (12022): Found design unit 1: lpm_shiftreg0-SYN File: /home/helium5/Desktop/Processor_Simulation/lpm_shiftreg0.vhd Line: 57
-    Info (12023): Found entity 1: lpm_shiftreg0 File: /home/helium5/Desktop/Processor_Simulation/lpm_shiftreg0.vhd Line: 42
+    Info (12022): Found design unit 1: lpm_shiftreg0-SYN File: /home/hamid/Desktop/memari/Processor_Simulation/lpm_shiftreg0.vhd Line: 57
+    Info (12023): Found entity 1: lpm_shiftreg0 File: /home/hamid/Desktop/memari/Processor_Simulation/lpm_shiftreg0.vhd Line: 42
 Info (12021): Found 2 design units, including 1 entities, in source file lpm_add_sub0.vhd
-    Info (12022): Found design unit 1: lpm_add_sub0-SYN File: /home/helium5/Desktop/Processor_Simulation/lpm_add_sub0.vhd Line: 52
-    Info (12023): Found entity 1: lpm_add_sub0 File: /home/helium5/Desktop/Processor_Simulation/lpm_add_sub0.vhd Line: 42
+    Info (12022): Found design unit 1: lpm_add_sub0-SYN File: /home/hamid/Desktop/memari/Processor_Simulation/lpm_add_sub0.vhd Line: 52
+    Info (12023): Found entity 1: lpm_add_sub0 File: /home/hamid/Desktop/memari/Processor_Simulation/lpm_add_sub0.vhd Line: 42
 Info (12021): Found 4 design units, including 2 entities, in source file altfp_compare0.vhd
-    Info (12022): Found design unit 1: altfp_compare0_altfp_compare_cmb-RTL File: /home/helium5/Desktop/Processor_Simulation/altfp_compare0.vhd Line: 57
-    Info (12022): Found design unit 2: altfp_compare0-RTL File: /home/helium5/Desktop/Processor_Simulation/altfp_compare0.vhd Line: 1045
-    Info (12023): Found entity 1: altfp_compare0_altfp_compare_cmb File: /home/helium5/Desktop/Processor_Simulation/altfp_compare0.vhd Line: 46
-    Info (12023): Found entity 2: altfp_compare0 File: /home/helium5/Desktop/Processor_Simulation/altfp_compare0.vhd Line: 1033
+    Info (12022): Found design unit 1: altfp_compare0_altfp_compare_cmb-RTL File: /home/hamid/Desktop/memari/Processor_Simulation/altfp_compare0.vhd Line: 57
+    Info (12022): Found design unit 2: altfp_compare0-RTL File: /home/hamid/Desktop/memari/Processor_Simulation/altfp_compare0.vhd Line: 1045
+    Info (12023): Found entity 1: altfp_compare0_altfp_compare_cmb File: /home/hamid/Desktop/memari/Processor_Simulation/altfp_compare0.vhd Line: 46
+    Info (12023): Found entity 2: altfp_compare0 File: /home/hamid/Desktop/memari/Processor_Simulation/altfp_compare0.vhd Line: 1033
 Info (12021): Found 2 design units, including 1 entities, in source file lpm_compare0.vhd
-    Info (12022): Found design unit 1: lpm_compare0-SYN File: /home/helium5/Desktop/Processor_Simulation/lpm_compare0.vhd Line: 53
-    Info (12023): Found entity 1: lpm_compare0 File: /home/helium5/Desktop/Processor_Simulation/lpm_compare0.vhd Line: 42
+    Info (12022): Found design unit 1: lpm_compare0-SYN File: /home/hamid/Desktop/memari/Processor_Simulation/lpm_compare0.vhd Line: 53
+    Info (12023): Found entity 1: lpm_compare0 File: /home/hamid/Desktop/memari/Processor_Simulation/lpm_compare0.vhd Line: 42
 Info (12021): Found 2 design units, including 1 entities, in source file lpm_constant0.vhd
-    Info (12022): Found design unit 1: lpm_constant0-SYN File: /home/helium5/Desktop/Processor_Simulation/lpm_constant0.vhd Line: 50
-    Info (12023): Found entity 1: lpm_constant0 File: /home/helium5/Desktop/Processor_Simulation/lpm_constant0.vhd Line: 42
+    Info (12022): Found design unit 1: lpm_constant0-SYN File: /home/hamid/Desktop/memari/Processor_Simulation/lpm_constant0.vhd Line: 50
+    Info (12023): Found entity 1: lpm_constant0 File: /home/hamid/Desktop/memari/Processor_Simulation/lpm_constant0.vhd Line: 42
 Info (12021): Found 2 design units, including 1 entities, in source file lpm_mux0.vhd
-    Info (12022): Found design unit 1: lpm_mux0-SYN File: /home/helium5/Desktop/Processor_Simulation/lpm_mux0.vhd Line: 55
-    Info (12023): Found entity 1: lpm_mux0 File: /home/helium5/Desktop/Processor_Simulation/lpm_mux0.vhd Line: 42
+    Info (12022): Found design unit 1: lpm_mux0-SYN File: /home/hamid/Desktop/memari/Processor_Simulation/lpm_mux0.vhd Line: 55
+    Info (12023): Found entity 1: lpm_mux0 File: /home/hamid/Desktop/memari/Processor_Simulation/lpm_mux0.vhd Line: 42
 Info (12021): Found 2 design units, including 1 entities, in source file lpm_mux1.vhd
-    Info (12022): Found design unit 1: lpm_mux1-SYN File: /home/helium5/Desktop/Processor_Simulation/lpm_mux1.vhd Line: 55
-    Info (12023): Found entity 1: lpm_mux1 File: /home/helium5/Desktop/Processor_Simulation/lpm_mux1.vhd Line: 42
+    Info (12022): Found design unit 1: lpm_mux1-SYN File: /home/hamid/Desktop/memari/Processor_Simulation/lpm_mux1.vhd Line: 55
+    Info (12023): Found entity 1: lpm_mux1 File: /home/hamid/Desktop/memari/Processor_Simulation/lpm_mux1.vhd Line: 42
 Info (12021): Found 1 design units, including 1 entities, in source file RAM_DUAL_PORT.v
-    Info (12023): Found entity 1: RAM_DUAL_PORT File: /home/helium5/Desktop/Processor_Simulation/RAM_DUAL_PORT.v Line: 39
+    Info (12023): Found entity 1: RAM_DUAL_PORT File: /home/hamid/Desktop/memari/Processor_Simulation/RAM_DUAL_PORT.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file ROM.v
-    Info (12023): Found entity 1: ROM File: /home/helium5/Desktop/Processor_Simulation/ROM.v Line: 39
+    Info (12023): Found entity 1: ROM File: /home/hamid/Desktop/memari/Processor_Simulation/ROM.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file RAM.v
-    Info (12023): Found entity 1: RAM File: /home/helium5/Desktop/Processor_Simulation/RAM.v Line: 39
+    Info (12023): Found entity 1: RAM File: /home/hamid/Desktop/memari/Processor_Simulation/RAM.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file INSTR_ROM.v
-    Info (12023): Found entity 1: INSTR_ROM File: /home/helium5/Desktop/Processor_Simulation/INSTR_ROM.v Line: 39
+    Info (12023): Found entity 1: INSTR_ROM File: /home/hamid/Desktop/memari/Processor_Simulation/INSTR_ROM.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file CTRL_ROM.v
-    Info (12023): Found entity 1: CTRL_ROM File: /home/helium5/Desktop/Processor_Simulation/CTRL_ROM.v Line: 39
+    Info (12023): Found entity 1: CTRL_ROM File: /home/hamid/Desktop/memari/Processor_Simulation/CTRL_ROM.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file ADD4.v
-    Info (12023): Found entity 1: ADD4 File: /home/helium5/Desktop/Processor_Simulation/ADD4.v Line: 39
+    Info (12023): Found entity 1: ADD4 File: /home/hamid/Desktop/memari/Processor_Simulation/ADD4.v Line: 39
 Info (12021): Found 2 design units, including 2 entities, in source file zero.v
-    Info (12023): Found entity 1: zero_lpm_constant_r09 File: /home/helium5/Desktop/Processor_Simulation/zero.v Line: 46
-    Info (12023): Found entity 2: zero File: /home/helium5/Desktop/Processor_Simulation/zero.v Line: 61
+    Info (12023): Found entity 1: zero_lpm_constant_r09 File: /home/hamid/Desktop/memari/Processor_Simulation/zero.v Line: 46
+    Info (12023): Found entity 2: zero File: /home/hamid/Desktop/memari/Processor_Simulation/zero.v Line: 61
 Info (12021): Found 2 design units, including 2 entities, in source file one.v
-    Info (12023): Found entity 1: one_lpm_constant_be9 File: /home/helium5/Desktop/Processor_Simulation/one.v Line: 46
-    Info (12023): Found entity 2: one File: /home/helium5/Desktop/Processor_Simulation/one.v Line: 61
+    Info (12023): Found entity 1: one_lpm_constant_be9 File: /home/hamid/Desktop/memari/Processor_Simulation/one.v Line: 46
+    Info (12023): Found entity 2: one File: /home/hamid/Desktop/memari/Processor_Simulation/one.v Line: 61
 Info (12021): Found 1 design units, including 1 entities, in source file lpm_decode0.v
-    Info (12023): Found entity 1: lpm_decode0 File: /home/helium5/Desktop/Processor_Simulation/lpm_decode0.v Line: 39
+    Info (12023): Found entity 1: lpm_decode0 File: /home/hamid/Desktop/memari/Processor_Simulation/lpm_decode0.v Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file alu_forward_compare_a.v
+    Info (12023): Found entity 1: alu_forward_compare_a File: /home/hamid/Desktop/memari/Processor_Simulation/alu_forward_compare_a.v Line: 40
 Info (12127): Elaborating entity "CA_Project" for the top level hierarchy
 Info (12128): Elaborating entity "BUSMUX" for hierarchy "BUSMUX:BRANCH"
 Info (12130): Elaborated megafunction instantiation "BUSMUX:BRANCH"
 Info (12133): Instantiated megafunction "BUSMUX:BRANCH" with the following parameter:
     Info (12134): Parameter "WIDTH" = "32"
-Info (12128): Elaborating entity "lpm_mux" for hierarchy "BUSMUX:BRANCH|lpm_mux:$00000" File: /home/helium5/intelFPGA_lite/20.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
-Info (12131): Elaborated megafunction instantiation "BUSMUX:BRANCH|lpm_mux:$00000", which is child of megafunction instantiation "BUSMUX:BRANCH" File: /home/helium5/intelFPGA_lite/20.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "BUSMUX:BRANCH|lpm_mux:$00000" File: /home/hamid/intelFPGA_lite/20.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
+Info (12131): Elaborated megafunction instantiation "BUSMUX:BRANCH|lpm_mux:$00000", which is child of megafunction instantiation "BUSMUX:BRANCH" File: /home/hamid/intelFPGA_lite/20.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_l0d.tdf
-    Info (12023): Found entity 1: mux_l0d File: /home/helium5/Desktop/Processor_Simulation/db/mux_l0d.tdf Line: 23
-Info (12128): Elaborating entity "mux_l0d" for hierarchy "BUSMUX:BRANCH|lpm_mux:$00000|mux_l0d:auto_generated" File: /home/helium5/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
+    Info (12023): Found entity 1: mux_l0d File: /home/hamid/Desktop/memari/Processor_Simulation/db/mux_l0d.tdf Line: 23
+Info (12128): Elaborating entity "mux_l0d" for hierarchy "BUSMUX:BRANCH|lpm_mux:$00000|mux_l0d:auto_generated" File: /home/hamid/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:CTRL_BUF"
 Info (12130): Elaborated megafunction instantiation "LPM_FF:CTRL_BUF"
 Info (12133): Instantiated megafunction "LPM_FF:CTRL_BUF" with the following parameter:
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_WIDTH" = "10"
 Info (12128): Elaborating entity "lpm_decode0" for hierarchy "lpm_decode0:inst21"
-Info (12128): Elaborating entity "lpm_decode" for hierarchy "lpm_decode0:inst21|lpm_decode:LPM_DECODE_component" File: /home/helium5/Desktop/Processor_Simulation/lpm_decode0.v Line: 72
-Info (12130): Elaborated megafunction instantiation "lpm_decode0:inst21|lpm_decode:LPM_DECODE_component" File: /home/helium5/Desktop/Processor_Simulation/lpm_decode0.v Line: 72
-Info (12133): Instantiated megafunction "lpm_decode0:inst21|lpm_decode:LPM_DECODE_component" with the following parameter: File: /home/helium5/Desktop/Processor_Simulation/lpm_decode0.v Line: 72
+Info (12128): Elaborating entity "lpm_decode" for hierarchy "lpm_decode0:inst21|lpm_decode:LPM_DECODE_component" File: /home/hamid/Desktop/memari/Processor_Simulation/lpm_decode0.v Line: 72
+Info (12130): Elaborated megafunction instantiation "lpm_decode0:inst21|lpm_decode:LPM_DECODE_component" File: /home/hamid/Desktop/memari/Processor_Simulation/lpm_decode0.v Line: 72
+Info (12133): Instantiated megafunction "lpm_decode0:inst21|lpm_decode:LPM_DECODE_component" with the following parameter: File: /home/hamid/Desktop/memari/Processor_Simulation/lpm_decode0.v Line: 72
     Info (12134): Parameter "lpm_decodes" = "4"
     Info (12134): Parameter "lpm_type" = "LPM_DECODE"
     Info (12134): Parameter "lpm_width" = "2"
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_3ff.tdf
-    Info (12023): Found entity 1: decode_3ff File: /home/helium5/Desktop/Processor_Simulation/db/decode_3ff.tdf Line: 23
-Info (12128): Elaborating entity "decode_3ff" for hierarchy "lpm_decode0:inst21|lpm_decode:LPM_DECODE_component|decode_3ff:auto_generated" File: /home/helium5/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_decode.tdf Line: 77
+    Info (12023): Found entity 1: decode_3ff File: /home/hamid/Desktop/memari/Processor_Simulation/db/decode_3ff.tdf Line: 23
+Info (12128): Elaborating entity "decode_3ff" for hierarchy "lpm_decode0:inst21|lpm_decode:LPM_DECODE_component|decode_3ff:auto_generated" File: /home/hamid/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_decode.tdf Line: 77
 Info (12128): Elaborating entity "CTRL_ROM" for hierarchy "CTRL_ROM:MICRO_CTRL"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "CTRL_ROM:MICRO_CTRL|altsyncram:altsyncram_component" File: /home/helium5/Desktop/Processor_Simulation/CTRL_ROM.v Line: 81
-Info (12130): Elaborated megafunction instantiation "CTRL_ROM:MICRO_CTRL|altsyncram:altsyncram_component" File: /home/helium5/Desktop/Processor_Simulation/CTRL_ROM.v Line: 81
-Info (12133): Instantiated megafunction "CTRL_ROM:MICRO_CTRL|altsyncram:altsyncram_component" with the following parameter: File: /home/helium5/Desktop/Processor_Simulation/CTRL_ROM.v Line: 81
+Info (12128): Elaborating entity "altsyncram" for hierarchy "CTRL_ROM:MICRO_CTRL|altsyncram:altsyncram_component" File: /home/hamid/Desktop/memari/Processor_Simulation/CTRL_ROM.v Line: 81
+Info (12130): Elaborated megafunction instantiation "CTRL_ROM:MICRO_CTRL|altsyncram:altsyncram_component" File: /home/hamid/Desktop/memari/Processor_Simulation/CTRL_ROM.v Line: 81
+Info (12133): Instantiated megafunction "CTRL_ROM:MICRO_CTRL|altsyncram:altsyncram_component" with the following parameter: File: /home/hamid/Desktop/memari/Processor_Simulation/CTRL_ROM.v Line: 81
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -1491,12 +1567,12 @@ Info (12133): Instantiated megafunction "CTRL_ROM:MICRO_CTRL|altsyncram:altsyncr
     Info (12134): Parameter "width_a" = "10"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_oe91.tdf
-    Info (12023): Found entity 1: altsyncram_oe91 File: /home/helium5/Desktop/Processor_Simulation/db/altsyncram_oe91.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_oe91" for hierarchy "CTRL_ROM:MICRO_CTRL|altsyncram:altsyncram_component|altsyncram_oe91:auto_generated" File: /home/helium5/intelFPGA_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+    Info (12023): Found entity 1: altsyncram_oe91 File: /home/hamid/Desktop/memari/Processor_Simulation/db/altsyncram_oe91.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_oe91" for hierarchy "CTRL_ROM:MICRO_CTRL|altsyncram:altsyncram_component|altsyncram_oe91:auto_generated" File: /home/hamid/intelFPGA_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12128): Elaborating entity "INSTR_ROM" for hierarchy "INSTR_ROM:INSTR_MEM"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "INSTR_ROM:INSTR_MEM|altsyncram:altsyncram_component" File: /home/helium5/Desktop/Processor_Simulation/INSTR_ROM.v Line: 81
-Info (12130): Elaborated megafunction instantiation "INSTR_ROM:INSTR_MEM|altsyncram:altsyncram_component" File: /home/helium5/Desktop/Processor_Simulation/INSTR_ROM.v Line: 81
-Info (12133): Instantiated megafunction "INSTR_ROM:INSTR_MEM|altsyncram:altsyncram_component" with the following parameter: File: /home/helium5/Desktop/Processor_Simulation/INSTR_ROM.v Line: 81
+Info (12128): Elaborating entity "altsyncram" for hierarchy "INSTR_ROM:INSTR_MEM|altsyncram:altsyncram_component" File: /home/hamid/Desktop/memari/Processor_Simulation/INSTR_ROM.v Line: 81
+Info (12130): Elaborated megafunction instantiation "INSTR_ROM:INSTR_MEM|altsyncram:altsyncram_component" File: /home/hamid/Desktop/memari/Processor_Simulation/INSTR_ROM.v Line: 81
+Info (12133): Instantiated megafunction "INSTR_ROM:INSTR_MEM|altsyncram:altsyncram_component" with the following parameter: File: /home/hamid/Desktop/memari/Processor_Simulation/INSTR_ROM.v Line: 81
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -1512,35 +1588,35 @@ Info (12133): Instantiated megafunction "INSTR_ROM:INSTR_MEM|altsyncram:altsyncr
     Info (12134): Parameter "width_a" = "32"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_cl91.tdf
-    Info (12023): Found entity 1: altsyncram_cl91 File: /home/helium5/Desktop/Processor_Simulation/db/altsyncram_cl91.tdf Line: 32
-Info (12128): Elaborating entity "altsyncram_cl91" for hierarchy "INSTR_ROM:INSTR_MEM|altsyncram:altsyncram_component|altsyncram_cl91:auto_generated" File: /home/helium5/intelFPGA_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+    Info (12023): Found entity 1: altsyncram_cl91 File: /home/hamid/Desktop/memari/Processor_Simulation/db/altsyncram_cl91.tdf Line: 32
+Info (12128): Elaborating entity "altsyncram_cl91" for hierarchy "INSTR_ROM:INSTR_MEM|altsyncram:altsyncram_component|altsyncram_cl91:auto_generated" File: /home/hamid/intelFPGA_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_eca.tdf
-    Info (12023): Found entity 1: decode_eca File: /home/helium5/Desktop/Processor_Simulation/db/decode_eca.tdf Line: 23
-Info (12128): Elaborating entity "decode_eca" for hierarchy "INSTR_ROM:INSTR_MEM|altsyncram:altsyncram_component|altsyncram_cl91:auto_generated|decode_eca:rden_decode" File: /home/helium5/Desktop/Processor_Simulation/db/altsyncram_cl91.tdf Line: 41
+    Info (12023): Found entity 1: decode_eca File: /home/hamid/Desktop/memari/Processor_Simulation/db/decode_eca.tdf Line: 23
+Info (12128): Elaborating entity "decode_eca" for hierarchy "INSTR_ROM:INSTR_MEM|altsyncram:altsyncram_component|altsyncram_cl91:auto_generated|decode_eca:rden_decode" File: /home/hamid/Desktop/memari/Processor_Simulation/db/altsyncram_cl91.tdf Line: 41
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_isb.tdf
-    Info (12023): Found entity 1: mux_isb File: /home/helium5/Desktop/Processor_Simulation/db/mux_isb.tdf Line: 23
-Info (12128): Elaborating entity "mux_isb" for hierarchy "INSTR_ROM:INSTR_MEM|altsyncram:altsyncram_component|altsyncram_cl91:auto_generated|mux_isb:mux2" File: /home/helium5/Desktop/Processor_Simulation/db/altsyncram_cl91.tdf Line: 42
+    Info (12023): Found entity 1: mux_isb File: /home/hamid/Desktop/memari/Processor_Simulation/db/mux_isb.tdf Line: 23
+Info (12128): Elaborating entity "mux_isb" for hierarchy "INSTR_ROM:INSTR_MEM|altsyncram:altsyncram_component|altsyncram_cl91:auto_generated|mux_isb:mux2" File: /home/hamid/Desktop/memari/Processor_Simulation/db/altsyncram_cl91.tdf Line: 42
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:PC"
 Info (12130): Elaborated megafunction instantiation "LPM_FF:PC"
 Info (12133): Instantiated megafunction "LPM_FF:PC" with the following parameter:
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_WIDTH" = "32"
 Info (12128): Elaborating entity "ADD4" for hierarchy "ADD4:inst17"
-Info (12128): Elaborating entity "lpm_add_sub" for hierarchy "ADD4:inst17|lpm_add_sub:LPM_ADD_SUB_component" File: /home/helium5/Desktop/Processor_Simulation/ADD4.v Line: 64
-Info (12130): Elaborated megafunction instantiation "ADD4:inst17|lpm_add_sub:LPM_ADD_SUB_component" File: /home/helium5/Desktop/Processor_Simulation/ADD4.v Line: 64
-Info (12133): Instantiated megafunction "ADD4:inst17|lpm_add_sub:LPM_ADD_SUB_component" with the following parameter: File: /home/helium5/Desktop/Processor_Simulation/ADD4.v Line: 64
+Info (12128): Elaborating entity "lpm_add_sub" for hierarchy "ADD4:inst17|lpm_add_sub:LPM_ADD_SUB_component" File: /home/hamid/Desktop/memari/Processor_Simulation/ADD4.v Line: 64
+Info (12130): Elaborated megafunction instantiation "ADD4:inst17|lpm_add_sub:LPM_ADD_SUB_component" File: /home/hamid/Desktop/memari/Processor_Simulation/ADD4.v Line: 64
+Info (12133): Instantiated megafunction "ADD4:inst17|lpm_add_sub:LPM_ADD_SUB_component" with the following parameter: File: /home/hamid/Desktop/memari/Processor_Simulation/ADD4.v Line: 64
     Info (12134): Parameter "lpm_direction" = "ADD"
     Info (12134): Parameter "lpm_hint" = "ONE_INPUT_IS_CONSTANT=YES,CIN_USED=NO"
     Info (12134): Parameter "lpm_representation" = "UNSIGNED"
     Info (12134): Parameter "lpm_type" = "LPM_ADD_SUB"
     Info (12134): Parameter "lpm_width" = "32"
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_p1i.tdf
-    Info (12023): Found entity 1: add_sub_p1i File: /home/helium5/Desktop/Processor_Simulation/db/add_sub_p1i.tdf Line: 23
-Info (12128): Elaborating entity "add_sub_p1i" for hierarchy "ADD4:inst17|lpm_add_sub:LPM_ADD_SUB_component|add_sub_p1i:auto_generated" File: /home/helium5/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_add_sub.tdf Line: 119
+    Info (12023): Found entity 1: add_sub_p1i File: /home/hamid/Desktop/memari/Processor_Simulation/db/add_sub_p1i.tdf Line: 23
+Info (12128): Elaborating entity "add_sub_p1i" for hierarchy "ADD4:inst17|lpm_add_sub:LPM_ADD_SUB_component|add_sub_p1i:auto_generated" File: /home/hamid/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_add_sub.tdf Line: 119
 Info (12128): Elaborating entity "lpm_mux1" for hierarchy "lpm_mux1:inst35"
-Info (12128): Elaborating entity "lpm_mux" for hierarchy "lpm_mux1:inst35|lpm_mux:LPM_MUX_component" File: /home/helium5/Desktop/Processor_Simulation/lpm_mux1.vhd Line: 201
-Info (12130): Elaborated megafunction instantiation "lpm_mux1:inst35|lpm_mux:LPM_MUX_component" File: /home/helium5/Desktop/Processor_Simulation/lpm_mux1.vhd Line: 201
-Info (12133): Instantiated megafunction "lpm_mux1:inst35|lpm_mux:LPM_MUX_component" with the following parameter: File: /home/helium5/Desktop/Processor_Simulation/lpm_mux1.vhd Line: 201
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "lpm_mux1:inst35|lpm_mux:LPM_MUX_component" File: /home/hamid/Desktop/memari/Processor_Simulation/lpm_mux1.vhd Line: 201
+Info (12130): Elaborated megafunction instantiation "lpm_mux1:inst35|lpm_mux:LPM_MUX_component" File: /home/hamid/Desktop/memari/Processor_Simulation/lpm_mux1.vhd Line: 201
+Info (12133): Instantiated megafunction "lpm_mux1:inst35|lpm_mux:LPM_MUX_component" with the following parameter: File: /home/hamid/Desktop/memari/Processor_Simulation/lpm_mux1.vhd Line: 201
     Info (12134): Parameter "LPM_WIDTH" = "32"
     Info (12134): Parameter "LPM_SIZE" = "4"
     Info (12134): Parameter "LPM_WIDTHS" = "2"
@@ -1548,25 +1624,25 @@ Info (12133): Instantiated megafunction "lpm_mux1:inst35|lpm_mux:LPM_MUX_compone
     Info (12134): Parameter "LPM_TYPE" = "LPM_MUX"
     Info (12134): Parameter "LPM_HINT" = "UNUSED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_3de.tdf
-    Info (12023): Found entity 1: mux_3de File: /home/helium5/Desktop/Processor_Simulation/db/mux_3de.tdf Line: 23
-Info (12128): Elaborating entity "mux_3de" for hierarchy "lpm_mux1:inst35|lpm_mux:LPM_MUX_component|mux_3de:auto_generated" File: /home/helium5/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
+    Info (12023): Found entity 1: mux_3de File: /home/hamid/Desktop/memari/Processor_Simulation/db/mux_3de.tdf Line: 23
+Info (12128): Elaborating entity "mux_3de" for hierarchy "lpm_mux1:inst35|lpm_mux:LPM_MUX_component|mux_3de:auto_generated" File: /home/hamid/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
 Info (12128): Elaborating entity "BUSMUX" for hierarchy "BUSMUX:SING_EXTEND_1"
 Info (12130): Elaborated megafunction instantiation "BUSMUX:SING_EXTEND_1"
 Info (12133): Instantiated megafunction "BUSMUX:SING_EXTEND_1" with the following parameter:
     Info (12134): Parameter "WIDTH" = "16"
-Info (12128): Elaborating entity "lpm_mux" for hierarchy "BUSMUX:SING_EXTEND_1|lpm_mux:$00000" File: /home/helium5/intelFPGA_lite/20.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
-Info (12131): Elaborated megafunction instantiation "BUSMUX:SING_EXTEND_1|lpm_mux:$00000", which is child of megafunction instantiation "BUSMUX:SING_EXTEND_1" File: /home/helium5/intelFPGA_lite/20.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "BUSMUX:SING_EXTEND_1|lpm_mux:$00000" File: /home/hamid/intelFPGA_lite/20.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
+Info (12131): Elaborated megafunction instantiation "BUSMUX:SING_EXTEND_1|lpm_mux:$00000", which is child of megafunction instantiation "BUSMUX:SING_EXTEND_1" File: /home/hamid/intelFPGA_lite/20.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_n0d.tdf
-    Info (12023): Found entity 1: mux_n0d File: /home/helium5/Desktop/Processor_Simulation/db/mux_n0d.tdf Line: 23
-Info (12128): Elaborating entity "mux_n0d" for hierarchy "BUSMUX:SING_EXTEND_1|lpm_mux:$00000|mux_n0d:auto_generated" File: /home/helium5/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
+    Info (12023): Found entity 1: mux_n0d File: /home/hamid/Desktop/memari/Processor_Simulation/db/mux_n0d.tdf Line: 23
+Info (12128): Elaborating entity "mux_n0d" for hierarchy "BUSMUX:SING_EXTEND_1|lpm_mux:$00000|mux_n0d:auto_generated" File: /home/hamid/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
 Info (12128): Elaborating entity "zero" for hierarchy "zero:const_0"
-Info (12128): Elaborating entity "zero_lpm_constant_r09" for hierarchy "zero:const_0|zero_lpm_constant_r09:zero_lpm_constant_r09_component" File: /home/helium5/Desktop/Processor_Simulation/zero.v Line: 70
+Info (12128): Elaborating entity "zero_lpm_constant_r09" for hierarchy "zero:const_0|zero_lpm_constant_r09:zero_lpm_constant_r09_component" File: /home/hamid/Desktop/memari/Processor_Simulation/zero.v Line: 70
 Info (12128): Elaborating entity "one" for hierarchy "one:const_1"
-Info (12128): Elaborating entity "one_lpm_constant_be9" for hierarchy "one:const_1|one_lpm_constant_be9:one_lpm_constant_be9_component" File: /home/helium5/Desktop/Processor_Simulation/one.v Line: 70
+Info (12128): Elaborating entity "one_lpm_constant_be9" for hierarchy "one:const_1|one_lpm_constant_be9:one_lpm_constant_be9_component" File: /home/hamid/Desktop/memari/Processor_Simulation/one.v Line: 70
 Info (12128): Elaborating entity "RAM_DUAL_PORT" for hierarchy "RAM_DUAL_PORT:REG_FILE"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "RAM_DUAL_PORT:REG_FILE|altsyncram:altsyncram_component" File: /home/helium5/Desktop/Processor_Simulation/RAM_DUAL_PORT.v Line: 102
-Info (12130): Elaborated megafunction instantiation "RAM_DUAL_PORT:REG_FILE|altsyncram:altsyncram_component" File: /home/helium5/Desktop/Processor_Simulation/RAM_DUAL_PORT.v Line: 102
-Info (12133): Instantiated megafunction "RAM_DUAL_PORT:REG_FILE|altsyncram:altsyncram_component" with the following parameter: File: /home/helium5/Desktop/Processor_Simulation/RAM_DUAL_PORT.v Line: 102
+Info (12128): Elaborating entity "altsyncram" for hierarchy "RAM_DUAL_PORT:REG_FILE|altsyncram:altsyncram_component" File: /home/hamid/Desktop/memari/Processor_Simulation/RAM_DUAL_PORT.v Line: 102
+Info (12130): Elaborated megafunction instantiation "RAM_DUAL_PORT:REG_FILE|altsyncram:altsyncram_component" File: /home/hamid/Desktop/memari/Processor_Simulation/RAM_DUAL_PORT.v Line: 102
+Info (12133): Instantiated megafunction "RAM_DUAL_PORT:REG_FILE|altsyncram:altsyncram_component" with the following parameter: File: /home/hamid/Desktop/memari/Processor_Simulation/RAM_DUAL_PORT.v Line: 102
     Info (12134): Parameter "address_reg_b" = "CLOCK0"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_input_b" = "BYPASS"
@@ -1594,35 +1670,35 @@ Info (12133): Instantiated megafunction "RAM_DUAL_PORT:REG_FILE|altsyncram:altsy
     Info (12134): Parameter "width_byteena_b" = "1"
     Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK0"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_sch2.tdf
-    Info (12023): Found entity 1: altsyncram_sch2 File: /home/helium5/Desktop/Processor_Simulation/db/altsyncram_sch2.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_sch2" for hierarchy "RAM_DUAL_PORT:REG_FILE|altsyncram:altsyncram_component|altsyncram_sch2:auto_generated" File: /home/helium5/intelFPGA_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+    Info (12023): Found entity 1: altsyncram_sch2 File: /home/hamid/Desktop/memari/Processor_Simulation/db/altsyncram_sch2.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_sch2" for hierarchy "RAM_DUAL_PORT:REG_FILE|altsyncram:altsyncram_component|altsyncram_sch2:auto_generated" File: /home/hamid/intelFPGA_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12128): Elaborating entity "BUSMUX" for hierarchy "BUSMUX:READ2"
 Info (12130): Elaborated megafunction instantiation "BUSMUX:READ2"
 Info (12133): Instantiated megafunction "BUSMUX:READ2" with the following parameter:
     Info (12134): Parameter "WIDTH" = "5"
-Info (12128): Elaborating entity "lpm_mux" for hierarchy "BUSMUX:READ2|lpm_mux:$00000" File: /home/helium5/intelFPGA_lite/20.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
-Info (12131): Elaborated megafunction instantiation "BUSMUX:READ2|lpm_mux:$00000", which is child of megafunction instantiation "BUSMUX:READ2" File: /home/helium5/intelFPGA_lite/20.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "BUSMUX:READ2|lpm_mux:$00000" File: /home/hamid/intelFPGA_lite/20.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
+Info (12131): Elaborated megafunction instantiation "BUSMUX:READ2|lpm_mux:$00000", which is child of megafunction instantiation "BUSMUX:READ2" File: /home/hamid/intelFPGA_lite/20.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_5vc.tdf
-    Info (12023): Found entity 1: mux_5vc File: /home/helium5/Desktop/Processor_Simulation/db/mux_5vc.tdf Line: 23
-Info (12128): Elaborating entity "mux_5vc" for hierarchy "BUSMUX:READ2|lpm_mux:$00000|mux_5vc:auto_generated" File: /home/helium5/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
+    Info (12023): Found entity 1: mux_5vc File: /home/hamid/Desktop/memari/Processor_Simulation/db/mux_5vc.tdf Line: 23
+Info (12128): Elaborating entity "mux_5vc" for hierarchy "BUSMUX:READ2|lpm_mux:$00000|mux_5vc:auto_generated" File: /home/hamid/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:MEM_ADDR_BUF"
 Info (12130): Elaborated megafunction instantiation "LPM_FF:MEM_ADDR_BUF"
 Info (12133): Instantiated megafunction "LPM_FF:MEM_ADDR_BUF" with the following parameter:
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_WIDTH" = "32"
 Warning (12125): Using design file ALU_MUX.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: ALU_MUX File: /home/helium5/Desktop/Processor_Simulation/ALU_MUX.v Line: 39
+    Info (12023): Found entity 1: ALU_MUX File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_MUX.v Line: 39
 Info (12128): Elaborating entity "ALU_MUX" for hierarchy "ALU_MUX:inst16"
-Info (12128): Elaborating entity "lpm_mux" for hierarchy "ALU_MUX:inst16|lpm_mux:LPM_MUX_component" File: /home/helium5/Desktop/Processor_Simulation/ALU_MUX.v Line: 132
-Info (12130): Elaborated megafunction instantiation "ALU_MUX:inst16|lpm_mux:LPM_MUX_component" File: /home/helium5/Desktop/Processor_Simulation/ALU_MUX.v Line: 132
-Info (12133): Instantiated megafunction "ALU_MUX:inst16|lpm_mux:LPM_MUX_component" with the following parameter: File: /home/helium5/Desktop/Processor_Simulation/ALU_MUX.v Line: 132
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "ALU_MUX:inst16|lpm_mux:LPM_MUX_component" File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_MUX.v Line: 132
+Info (12130): Elaborated megafunction instantiation "ALU_MUX:inst16|lpm_mux:LPM_MUX_component" File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_MUX.v Line: 132
+Info (12133): Instantiated megafunction "ALU_MUX:inst16|lpm_mux:LPM_MUX_component" with the following parameter: File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_MUX.v Line: 132
     Info (12134): Parameter "lpm_size" = "24"
     Info (12134): Parameter "lpm_type" = "LPM_MUX"
     Info (12134): Parameter "lpm_width" = "32"
     Info (12134): Parameter "lpm_widths" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_d2d.tdf
-    Info (12023): Found entity 1: mux_d2d File: /home/helium5/Desktop/Processor_Simulation/db/mux_d2d.tdf Line: 23
-Info (12128): Elaborating entity "mux_d2d" for hierarchy "ALU_MUX:inst16|lpm_mux:LPM_MUX_component|mux_d2d:auto_generated" File: /home/helium5/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
+    Info (12023): Found entity 1: mux_d2d File: /home/hamid/Desktop/memari/Processor_Simulation/db/mux_d2d.tdf Line: 23
+Info (12128): Elaborating entity "mux_d2d" for hierarchy "ALU_MUX:inst16|lpm_mux:LPM_MUX_component|mux_d2d:auto_generated" File: /home/hamid/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
 Info (12128): Elaborating entity "LPM_INV" for hierarchy "LPM_INV:inst7"
 Info (12130): Elaborated megafunction instantiation "LPM_INV:inst7"
 Info (12133): Instantiated megafunction "LPM_INV:inst7" with the following parameter:
@@ -1633,113 +1709,128 @@ Info (12133): Instantiated megafunction "LPM_XOR:inst9" with the following param
     Info (12134): Parameter "LPM_SIZE" = "2"
     Info (12134): Parameter "LPM_WIDTH" = "32"
 Warning (12125): Using design file ALU_SHIFT_LEFT.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: ALU_SHIFT_LEFT File: /home/helium5/Desktop/Processor_Simulation/ALU_SHIFT_LEFT.v Line: 39
+    Info (12023): Found entity 1: ALU_SHIFT_LEFT File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_SHIFT_LEFT.v Line: 39
 Info (12128): Elaborating entity "ALU_SHIFT_LEFT" for hierarchy "ALU_SHIFT_LEFT:inst10"
-Info (12128): Elaborating entity "lpm_clshift" for hierarchy "ALU_SHIFT_LEFT:inst10|lpm_clshift:LPM_CLSHIFT_component" File: /home/helium5/Desktop/Processor_Simulation/ALU_SHIFT_LEFT.v Line: 65
-Info (12130): Elaborated megafunction instantiation "ALU_SHIFT_LEFT:inst10|lpm_clshift:LPM_CLSHIFT_component" File: /home/helium5/Desktop/Processor_Simulation/ALU_SHIFT_LEFT.v Line: 65
-Info (12133): Instantiated megafunction "ALU_SHIFT_LEFT:inst10|lpm_clshift:LPM_CLSHIFT_component" with the following parameter: File: /home/helium5/Desktop/Processor_Simulation/ALU_SHIFT_LEFT.v Line: 65
+Info (12128): Elaborating entity "lpm_clshift" for hierarchy "ALU_SHIFT_LEFT:inst10|lpm_clshift:LPM_CLSHIFT_component" File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_SHIFT_LEFT.v Line: 65
+Info (12130): Elaborated megafunction instantiation "ALU_SHIFT_LEFT:inst10|lpm_clshift:LPM_CLSHIFT_component" File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_SHIFT_LEFT.v Line: 65
+Info (12133): Instantiated megafunction "ALU_SHIFT_LEFT:inst10|lpm_clshift:LPM_CLSHIFT_component" with the following parameter: File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_SHIFT_LEFT.v Line: 65
     Info (12134): Parameter "lpm_shifttype" = "LOGICAL"
     Info (12134): Parameter "lpm_type" = "LPM_CLSHIFT"
     Info (12134): Parameter "lpm_width" = "32"
     Info (12134): Parameter "lpm_widthdist" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_clshift_ukb.tdf
-    Info (12023): Found entity 1: lpm_clshift_ukb File: /home/helium5/Desktop/Processor_Simulation/db/lpm_clshift_ukb.tdf Line: 23
-Info (12128): Elaborating entity "lpm_clshift_ukb" for hierarchy "ALU_SHIFT_LEFT:inst10|lpm_clshift:LPM_CLSHIFT_component|lpm_clshift_ukb:auto_generated" File: /home/helium5/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_clshift.tdf Line: 54
+    Info (12023): Found entity 1: lpm_clshift_ukb File: /home/hamid/Desktop/memari/Processor_Simulation/db/lpm_clshift_ukb.tdf Line: 23
+Info (12128): Elaborating entity "lpm_clshift_ukb" for hierarchy "ALU_SHIFT_LEFT:inst10|lpm_clshift:LPM_CLSHIFT_component|lpm_clshift_ukb:auto_generated" File: /home/hamid/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_clshift.tdf Line: 54
+Info (12128): Elaborating entity "alu_forward_compare_a" for hierarchy "alu_forward_compare_a:inst27"
+Info (12128): Elaborating entity "lpm_compare" for hierarchy "alu_forward_compare_a:inst27|lpm_compare:LPM_COMPARE_component" File: /home/hamid/Desktop/memari/Processor_Simulation/alu_forward_compare_a.v Line: 63
+Info (12130): Elaborated megafunction instantiation "alu_forward_compare_a:inst27|lpm_compare:LPM_COMPARE_component" File: /home/hamid/Desktop/memari/Processor_Simulation/alu_forward_compare_a.v Line: 63
+Info (12133): Instantiated megafunction "alu_forward_compare_a:inst27|lpm_compare:LPM_COMPARE_component" with the following parameter: File: /home/hamid/Desktop/memari/Processor_Simulation/alu_forward_compare_a.v Line: 63
+    Info (12134): Parameter "lpm_representation" = "UNSIGNED"
+    Info (12134): Parameter "lpm_type" = "LPM_COMPARE"
+    Info (12134): Parameter "lpm_width" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_mpg.tdf
+    Info (12023): Found entity 1: cmpr_mpg File: /home/hamid/Desktop/memari/Processor_Simulation/db/cmpr_mpg.tdf Line: 23
+Info (12128): Elaborating entity "cmpr_mpg" for hierarchy "alu_forward_compare_a:inst27|lpm_compare:LPM_COMPARE_component|cmpr_mpg:auto_generated" File: /home/hamid/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_compare.tdf Line: 281
+Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:WB_REG_2"
+Info (12130): Elaborated megafunction instantiation "LPM_FF:WB_REG_2"
+Info (12133): Instantiated megafunction "LPM_FF:WB_REG_2" with the following parameter:
+    Info (12134): Parameter "LPM_FFTYPE" = "DFF"
+    Info (12134): Parameter "LPM_WIDTH" = "5"
 Warning (12125): Using design file ALU_SHIFT_RIGHT.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: ALU_SHIFT_RIGHT File: /home/helium5/Desktop/Processor_Simulation/ALU_SHIFT_RIGHT.v Line: 39
+    Info (12023): Found entity 1: ALU_SHIFT_RIGHT File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_SHIFT_RIGHT.v Line: 39
 Info (12128): Elaborating entity "ALU_SHIFT_RIGHT" for hierarchy "ALU_SHIFT_RIGHT:inst11"
-Info (12128): Elaborating entity "lpm_clshift" for hierarchy "ALU_SHIFT_RIGHT:inst11|lpm_clshift:LPM_CLSHIFT_component" File: /home/helium5/Desktop/Processor_Simulation/ALU_SHIFT_RIGHT.v Line: 65
-Info (12130): Elaborated megafunction instantiation "ALU_SHIFT_RIGHT:inst11|lpm_clshift:LPM_CLSHIFT_component" File: /home/helium5/Desktop/Processor_Simulation/ALU_SHIFT_RIGHT.v Line: 65
-Info (12133): Instantiated megafunction "ALU_SHIFT_RIGHT:inst11|lpm_clshift:LPM_CLSHIFT_component" with the following parameter: File: /home/helium5/Desktop/Processor_Simulation/ALU_SHIFT_RIGHT.v Line: 65
+Info (12128): Elaborating entity "lpm_clshift" for hierarchy "ALU_SHIFT_RIGHT:inst11|lpm_clshift:LPM_CLSHIFT_component" File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_SHIFT_RIGHT.v Line: 65
+Info (12130): Elaborated megafunction instantiation "ALU_SHIFT_RIGHT:inst11|lpm_clshift:LPM_CLSHIFT_component" File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_SHIFT_RIGHT.v Line: 65
+Info (12133): Instantiated megafunction "ALU_SHIFT_RIGHT:inst11|lpm_clshift:LPM_CLSHIFT_component" with the following parameter: File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_SHIFT_RIGHT.v Line: 65
     Info (12134): Parameter "lpm_shifttype" = "LOGICAL"
     Info (12134): Parameter "lpm_type" = "LPM_CLSHIFT"
     Info (12134): Parameter "lpm_width" = "32"
     Info (12134): Parameter "lpm_widthdist" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_clshift_vjc.tdf
-    Info (12023): Found entity 1: lpm_clshift_vjc File: /home/helium5/Desktop/Processor_Simulation/db/lpm_clshift_vjc.tdf Line: 23
-Info (12128): Elaborating entity "lpm_clshift_vjc" for hierarchy "ALU_SHIFT_RIGHT:inst11|lpm_clshift:LPM_CLSHIFT_component|lpm_clshift_vjc:auto_generated" File: /home/helium5/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_clshift.tdf Line: 54
+    Info (12023): Found entity 1: lpm_clshift_vjc File: /home/hamid/Desktop/memari/Processor_Simulation/db/lpm_clshift_vjc.tdf Line: 23
+Info (12128): Elaborating entity "lpm_clshift_vjc" for hierarchy "ALU_SHIFT_RIGHT:inst11|lpm_clshift:LPM_CLSHIFT_component|lpm_clshift_vjc:auto_generated" File: /home/hamid/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_clshift.tdf Line: 54
 Warning (12125): Using design file ALU_ROTATE_LEFT.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: ALU_ROTATE_LEFT File: /home/helium5/Desktop/Processor_Simulation/ALU_ROTATE_LEFT.v Line: 39
+    Info (12023): Found entity 1: ALU_ROTATE_LEFT File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_ROTATE_LEFT.v Line: 39
 Info (12128): Elaborating entity "ALU_ROTATE_LEFT" for hierarchy "ALU_ROTATE_LEFT:inst12"
-Info (12128): Elaborating entity "lpm_clshift" for hierarchy "ALU_ROTATE_LEFT:inst12|lpm_clshift:LPM_CLSHIFT_component" File: /home/helium5/Desktop/Processor_Simulation/ALU_ROTATE_LEFT.v Line: 65
-Info (12130): Elaborated megafunction instantiation "ALU_ROTATE_LEFT:inst12|lpm_clshift:LPM_CLSHIFT_component" File: /home/helium5/Desktop/Processor_Simulation/ALU_ROTATE_LEFT.v Line: 65
-Info (12133): Instantiated megafunction "ALU_ROTATE_LEFT:inst12|lpm_clshift:LPM_CLSHIFT_component" with the following parameter: File: /home/helium5/Desktop/Processor_Simulation/ALU_ROTATE_LEFT.v Line: 65
+Info (12128): Elaborating entity "lpm_clshift" for hierarchy "ALU_ROTATE_LEFT:inst12|lpm_clshift:LPM_CLSHIFT_component" File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_ROTATE_LEFT.v Line: 65
+Info (12130): Elaborated megafunction instantiation "ALU_ROTATE_LEFT:inst12|lpm_clshift:LPM_CLSHIFT_component" File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_ROTATE_LEFT.v Line: 65
+Info (12133): Instantiated megafunction "ALU_ROTATE_LEFT:inst12|lpm_clshift:LPM_CLSHIFT_component" with the following parameter: File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_ROTATE_LEFT.v Line: 65
     Info (12134): Parameter "lpm_shifttype" = "ROTATE"
     Info (12134): Parameter "lpm_type" = "LPM_CLSHIFT"
     Info (12134): Parameter "lpm_width" = "32"
     Info (12134): Parameter "lpm_widthdist" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_clshift_iib.tdf
-    Info (12023): Found entity 1: lpm_clshift_iib File: /home/helium5/Desktop/Processor_Simulation/db/lpm_clshift_iib.tdf Line: 23
-Info (12128): Elaborating entity "lpm_clshift_iib" for hierarchy "ALU_ROTATE_LEFT:inst12|lpm_clshift:LPM_CLSHIFT_component|lpm_clshift_iib:auto_generated" File: /home/helium5/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_clshift.tdf Line: 54
+    Info (12023): Found entity 1: lpm_clshift_iib File: /home/hamid/Desktop/memari/Processor_Simulation/db/lpm_clshift_iib.tdf Line: 23
+Info (12128): Elaborating entity "lpm_clshift_iib" for hierarchy "ALU_ROTATE_LEFT:inst12|lpm_clshift:LPM_CLSHIFT_component|lpm_clshift_iib:auto_generated" File: /home/hamid/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_clshift.tdf Line: 54
 Warning (12125): Using design file ALU_ROTATE_RIGHT.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: ALU_ROTATE_RIGHT File: /home/helium5/Desktop/Processor_Simulation/ALU_ROTATE_RIGHT.v Line: 39
+    Info (12023): Found entity 1: ALU_ROTATE_RIGHT File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_ROTATE_RIGHT.v Line: 39
 Info (12128): Elaborating entity "ALU_ROTATE_RIGHT" for hierarchy "ALU_ROTATE_RIGHT:inst13"
-Info (12128): Elaborating entity "lpm_clshift" for hierarchy "ALU_ROTATE_RIGHT:inst13|lpm_clshift:LPM_CLSHIFT_component" File: /home/helium5/Desktop/Processor_Simulation/ALU_ROTATE_RIGHT.v Line: 65
-Info (12130): Elaborated megafunction instantiation "ALU_ROTATE_RIGHT:inst13|lpm_clshift:LPM_CLSHIFT_component" File: /home/helium5/Desktop/Processor_Simulation/ALU_ROTATE_RIGHT.v Line: 65
-Info (12133): Instantiated megafunction "ALU_ROTATE_RIGHT:inst13|lpm_clshift:LPM_CLSHIFT_component" with the following parameter: File: /home/helium5/Desktop/Processor_Simulation/ALU_ROTATE_RIGHT.v Line: 65
+Info (12128): Elaborating entity "lpm_clshift" for hierarchy "ALU_ROTATE_RIGHT:inst13|lpm_clshift:LPM_CLSHIFT_component" File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_ROTATE_RIGHT.v Line: 65
+Info (12130): Elaborated megafunction instantiation "ALU_ROTATE_RIGHT:inst13|lpm_clshift:LPM_CLSHIFT_component" File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_ROTATE_RIGHT.v Line: 65
+Info (12133): Instantiated megafunction "ALU_ROTATE_RIGHT:inst13|lpm_clshift:LPM_CLSHIFT_component" with the following parameter: File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_ROTATE_RIGHT.v Line: 65
     Info (12134): Parameter "lpm_shifttype" = "ROTATE"
     Info (12134): Parameter "lpm_type" = "LPM_CLSHIFT"
     Info (12134): Parameter "lpm_width" = "32"
     Info (12134): Parameter "lpm_widthdist" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_clshift_jhc.tdf
-    Info (12023): Found entity 1: lpm_clshift_jhc File: /home/helium5/Desktop/Processor_Simulation/db/lpm_clshift_jhc.tdf Line: 23
-Info (12128): Elaborating entity "lpm_clshift_jhc" for hierarchy "ALU_ROTATE_RIGHT:inst13|lpm_clshift:LPM_CLSHIFT_component|lpm_clshift_jhc:auto_generated" File: /home/helium5/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_clshift.tdf Line: 54
+    Info (12023): Found entity 1: lpm_clshift_jhc File: /home/hamid/Desktop/memari/Processor_Simulation/db/lpm_clshift_jhc.tdf Line: 23
+Info (12128): Elaborating entity "lpm_clshift_jhc" for hierarchy "ALU_ROTATE_RIGHT:inst13|lpm_clshift:LPM_CLSHIFT_component|lpm_clshift_jhc:auto_generated" File: /home/hamid/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_clshift.tdf Line: 54
 Warning (12125): Using design file ALU_CONST_ZERO.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: ALU_CONST_ZERO File: /home/helium5/Desktop/Processor_Simulation/ALU_CONST_ZERO.v Line: 39
+    Info (12023): Found entity 1: ALU_CONST_ZERO File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_CONST_ZERO.v Line: 39
 Info (12128): Elaborating entity "ALU_CONST_ZERO" for hierarchy "ALU_CONST_ZERO:inst14"
-Info (12128): Elaborating entity "lpm_constant" for hierarchy "ALU_CONST_ZERO:inst14|lpm_constant:LPM_CONSTANT_component" File: /home/helium5/Desktop/Processor_Simulation/ALU_CONST_ZERO.v Line: 48
-Info (12130): Elaborated megafunction instantiation "ALU_CONST_ZERO:inst14|lpm_constant:LPM_CONSTANT_component" File: /home/helium5/Desktop/Processor_Simulation/ALU_CONST_ZERO.v Line: 48
-Info (12133): Instantiated megafunction "ALU_CONST_ZERO:inst14|lpm_constant:LPM_CONSTANT_component" with the following parameter: File: /home/helium5/Desktop/Processor_Simulation/ALU_CONST_ZERO.v Line: 48
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "ALU_CONST_ZERO:inst14|lpm_constant:LPM_CONSTANT_component" File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_CONST_ZERO.v Line: 48
+Info (12130): Elaborated megafunction instantiation "ALU_CONST_ZERO:inst14|lpm_constant:LPM_CONSTANT_component" File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_CONST_ZERO.v Line: 48
+Info (12133): Instantiated megafunction "ALU_CONST_ZERO:inst14|lpm_constant:LPM_CONSTANT_component" with the following parameter: File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_CONST_ZERO.v Line: 48
     Info (12134): Parameter "lpm_cvalue" = "0"
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "LPM_CONSTANT"
     Info (12134): Parameter "lpm_width" = "31"
 Warning (12125): Using design file ALU_COMPARE_UNSIGNED.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: ALU_COMPARE_UNSIGNED File: /home/helium5/Desktop/Processor_Simulation/ALU_COMPARE_UNSIGNED.v Line: 39
+    Info (12023): Found entity 1: ALU_COMPARE_UNSIGNED File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_COMPARE_UNSIGNED.v Line: 39
 Info (12128): Elaborating entity "ALU_COMPARE_UNSIGNED" for hierarchy "ALU_COMPARE_UNSIGNED:inst15"
-Info (12128): Elaborating entity "lpm_compare" for hierarchy "ALU_COMPARE_UNSIGNED:inst15|lpm_compare:LPM_COMPARE_component" File: /home/helium5/Desktop/Processor_Simulation/ALU_COMPARE_UNSIGNED.v Line: 62
-Info (12130): Elaborated megafunction instantiation "ALU_COMPARE_UNSIGNED:inst15|lpm_compare:LPM_COMPARE_component" File: /home/helium5/Desktop/Processor_Simulation/ALU_COMPARE_UNSIGNED.v Line: 62
-Info (12133): Instantiated megafunction "ALU_COMPARE_UNSIGNED:inst15|lpm_compare:LPM_COMPARE_component" with the following parameter: File: /home/helium5/Desktop/Processor_Simulation/ALU_COMPARE_UNSIGNED.v Line: 62
+Info (12128): Elaborating entity "lpm_compare" for hierarchy "ALU_COMPARE_UNSIGNED:inst15|lpm_compare:LPM_COMPARE_component" File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_COMPARE_UNSIGNED.v Line: 62
+Info (12130): Elaborated megafunction instantiation "ALU_COMPARE_UNSIGNED:inst15|lpm_compare:LPM_COMPARE_component" File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_COMPARE_UNSIGNED.v Line: 62
+Info (12133): Instantiated megafunction "ALU_COMPARE_UNSIGNED:inst15|lpm_compare:LPM_COMPARE_component" with the following parameter: File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_COMPARE_UNSIGNED.v Line: 62
     Info (12134): Parameter "lpm_representation" = "UNSIGNED"
     Info (12134): Parameter "lpm_type" = "LPM_COMPARE"
     Info (12134): Parameter "lpm_width" = "32"
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_drg.tdf
-    Info (12023): Found entity 1: cmpr_drg File: /home/helium5/Desktop/Processor_Simulation/db/cmpr_drg.tdf Line: 23
-Info (12128): Elaborating entity "cmpr_drg" for hierarchy "ALU_COMPARE_UNSIGNED:inst15|lpm_compare:LPM_COMPARE_component|cmpr_drg:auto_generated" File: /home/helium5/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_compare.tdf Line: 281
+    Info (12023): Found entity 1: cmpr_drg File: /home/hamid/Desktop/memari/Processor_Simulation/db/cmpr_drg.tdf Line: 23
+Info (12128): Elaborating entity "cmpr_drg" for hierarchy "ALU_COMPARE_UNSIGNED:inst15|lpm_compare:LPM_COMPARE_component|cmpr_drg:auto_generated" File: /home/hamid/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_compare.tdf Line: 281
 Warning (12125): Using design file ALU_ADD.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: ALU_ADD File: /home/helium5/Desktop/Processor_Simulation/ALU_ADD.v Line: 39
+    Info (12023): Found entity 1: ALU_ADD File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_ADD.v Line: 39
 Info (12128): Elaborating entity "ALU_ADD" for hierarchy "ALU_ADD:inst1"
-Info (12128): Elaborating entity "lpm_add_sub" for hierarchy "ALU_ADD:inst1|lpm_add_sub:LPM_ADD_SUB_component" File: /home/helium5/Desktop/Processor_Simulation/ALU_ADD.v Line: 65
-Info (12130): Elaborated megafunction instantiation "ALU_ADD:inst1|lpm_add_sub:LPM_ADD_SUB_component" File: /home/helium5/Desktop/Processor_Simulation/ALU_ADD.v Line: 65
-Info (12133): Instantiated megafunction "ALU_ADD:inst1|lpm_add_sub:LPM_ADD_SUB_component" with the following parameter: File: /home/helium5/Desktop/Processor_Simulation/ALU_ADD.v Line: 65
+Info (12128): Elaborating entity "lpm_add_sub" for hierarchy "ALU_ADD:inst1|lpm_add_sub:LPM_ADD_SUB_component" File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_ADD.v Line: 65
+Info (12130): Elaborated megafunction instantiation "ALU_ADD:inst1|lpm_add_sub:LPM_ADD_SUB_component" File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_ADD.v Line: 65
+Info (12133): Instantiated megafunction "ALU_ADD:inst1|lpm_add_sub:LPM_ADD_SUB_component" with the following parameter: File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_ADD.v Line: 65
     Info (12134): Parameter "lpm_direction" = "ADD"
     Info (12134): Parameter "lpm_hint" = "ONE_INPUT_IS_CONSTANT=NO,CIN_USED=NO"
     Info (12134): Parameter "lpm_representation" = "SIGNED"
     Info (12134): Parameter "lpm_type" = "LPM_ADD_SUB"
     Info (12134): Parameter "lpm_width" = "32"
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_2nh.tdf
-    Info (12023): Found entity 1: add_sub_2nh File: /home/helium5/Desktop/Processor_Simulation/db/add_sub_2nh.tdf Line: 23
-Info (12128): Elaborating entity "add_sub_2nh" for hierarchy "ALU_ADD:inst1|lpm_add_sub:LPM_ADD_SUB_component|add_sub_2nh:auto_generated" File: /home/helium5/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_add_sub.tdf Line: 119
+    Info (12023): Found entity 1: add_sub_2nh File: /home/hamid/Desktop/memari/Processor_Simulation/db/add_sub_2nh.tdf Line: 23
+Info (12128): Elaborating entity "add_sub_2nh" for hierarchy "ALU_ADD:inst1|lpm_add_sub:LPM_ADD_SUB_component|add_sub_2nh:auto_generated" File: /home/hamid/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_add_sub.tdf Line: 119
 Warning (12125): Using design file ALU_SUB.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: ALU_SUB File: /home/helium5/Desktop/Processor_Simulation/ALU_SUB.v Line: 39
+    Info (12023): Found entity 1: ALU_SUB File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_SUB.v Line: 39
 Info (12128): Elaborating entity "ALU_SUB" for hierarchy "ALU_SUB:inst23"
-Info (12128): Elaborating entity "lpm_add_sub" for hierarchy "ALU_SUB:inst23|lpm_add_sub:LPM_ADD_SUB_component" File: /home/helium5/Desktop/Processor_Simulation/ALU_SUB.v Line: 65
-Info (12130): Elaborated megafunction instantiation "ALU_SUB:inst23|lpm_add_sub:LPM_ADD_SUB_component" File: /home/helium5/Desktop/Processor_Simulation/ALU_SUB.v Line: 65
-Info (12133): Instantiated megafunction "ALU_SUB:inst23|lpm_add_sub:LPM_ADD_SUB_component" with the following parameter: File: /home/helium5/Desktop/Processor_Simulation/ALU_SUB.v Line: 65
+Info (12128): Elaborating entity "lpm_add_sub" for hierarchy "ALU_SUB:inst23|lpm_add_sub:LPM_ADD_SUB_component" File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_SUB.v Line: 65
+Info (12130): Elaborated megafunction instantiation "ALU_SUB:inst23|lpm_add_sub:LPM_ADD_SUB_component" File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_SUB.v Line: 65
+Info (12133): Instantiated megafunction "ALU_SUB:inst23|lpm_add_sub:LPM_ADD_SUB_component" with the following parameter: File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_SUB.v Line: 65
     Info (12134): Parameter "lpm_direction" = "SUB"
     Info (12134): Parameter "lpm_hint" = "ONE_INPUT_IS_CONSTANT=NO,CIN_USED=NO"
     Info (12134): Parameter "lpm_representation" = "SIGNED"
     Info (12134): Parameter "lpm_type" = "LPM_ADD_SUB"
     Info (12134): Parameter "lpm_width" = "32"
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_3oh.tdf
-    Info (12023): Found entity 1: add_sub_3oh File: /home/helium5/Desktop/Processor_Simulation/db/add_sub_3oh.tdf Line: 23
-Info (12128): Elaborating entity "add_sub_3oh" for hierarchy "ALU_SUB:inst23|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3oh:auto_generated" File: /home/helium5/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_add_sub.tdf Line: 119
+    Info (12023): Found entity 1: add_sub_3oh File: /home/hamid/Desktop/memari/Processor_Simulation/db/add_sub_3oh.tdf Line: 23
+Info (12128): Elaborating entity "add_sub_3oh" for hierarchy "ALU_SUB:inst23|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3oh:auto_generated" File: /home/hamid/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_add_sub.tdf Line: 119
 Warning (12125): Using design file ALU_MUL.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: ALU_MUL File: /home/helium5/Desktop/Processor_Simulation/ALU_MUL.v Line: 39
+    Info (12023): Found entity 1: ALU_MUL File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_MUL.v Line: 39
 Info (12128): Elaborating entity "ALU_MUL" for hierarchy "ALU_MUL:inst22"
-Info (12128): Elaborating entity "lpm_mult" for hierarchy "ALU_MUL:inst22|lpm_mult:lpm_mult_component" File: /home/helium5/Desktop/Processor_Simulation/ALU_MUL.v Line: 58
-Info (12130): Elaborated megafunction instantiation "ALU_MUL:inst22|lpm_mult:lpm_mult_component" File: /home/helium5/Desktop/Processor_Simulation/ALU_MUL.v Line: 58
-Info (12133): Instantiated megafunction "ALU_MUL:inst22|lpm_mult:lpm_mult_component" with the following parameter: File: /home/helium5/Desktop/Processor_Simulation/ALU_MUL.v Line: 58
+Info (12128): Elaborating entity "lpm_mult" for hierarchy "ALU_MUL:inst22|lpm_mult:lpm_mult_component" File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_MUL.v Line: 58
+Info (12130): Elaborated megafunction instantiation "ALU_MUL:inst22|lpm_mult:lpm_mult_component" File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_MUL.v Line: 58
+Info (12133): Instantiated megafunction "ALU_MUL:inst22|lpm_mult:lpm_mult_component" with the following parameter: File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_MUL.v Line: 58
     Info (12134): Parameter "lpm_hint" = "MAXIMIZE_SPEED=5"
     Info (12134): Parameter "lpm_representation" = "SIGNED"
     Info (12134): Parameter "lpm_type" = "LPM_MULT"
@@ -1747,14 +1838,14 @@ Info (12133): Instantiated megafunction "ALU_MUL:inst22|lpm_mult:lpm_mult_compon
     Info (12134): Parameter "lpm_widthb" = "32"
     Info (12134): Parameter "lpm_widthp" = "64"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mult_gcn.tdf
-    Info (12023): Found entity 1: mult_gcn File: /home/helium5/Desktop/Processor_Simulation/db/mult_gcn.tdf Line: 31
-Info (12128): Elaborating entity "mult_gcn" for hierarchy "ALU_MUL:inst22|lpm_mult:lpm_mult_component|mult_gcn:auto_generated" File: /home/helium5/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_mult.tdf Line: 377
+    Info (12023): Found entity 1: mult_gcn File: /home/hamid/Desktop/memari/Processor_Simulation/db/mult_gcn.tdf Line: 31
+Info (12128): Elaborating entity "mult_gcn" for hierarchy "ALU_MUL:inst22|lpm_mult:lpm_mult_component|mult_gcn:auto_generated" File: /home/hamid/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_mult.tdf Line: 377
 Warning (12125): Using design file ALU_DEVIDE.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: ALU_DEVIDE File: /home/helium5/Desktop/Processor_Simulation/ALU_DEVIDE.v Line: 39
+    Info (12023): Found entity 1: ALU_DEVIDE File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_DEVIDE.v Line: 39
 Info (12128): Elaborating entity "ALU_DEVIDE" for hierarchy "ALU_DEVIDE:inst18"
-Info (12128): Elaborating entity "lpm_divide" for hierarchy "ALU_DEVIDE:inst18|lpm_divide:LPM_DIVIDE_component" File: /home/helium5/Desktop/Processor_Simulation/ALU_DEVIDE.v Line: 62
-Info (12130): Elaborated megafunction instantiation "ALU_DEVIDE:inst18|lpm_divide:LPM_DIVIDE_component" File: /home/helium5/Desktop/Processor_Simulation/ALU_DEVIDE.v Line: 62
-Info (12133): Instantiated megafunction "ALU_DEVIDE:inst18|lpm_divide:LPM_DIVIDE_component" with the following parameter: File: /home/helium5/Desktop/Processor_Simulation/ALU_DEVIDE.v Line: 62
+Info (12128): Elaborating entity "lpm_divide" for hierarchy "ALU_DEVIDE:inst18|lpm_divide:LPM_DIVIDE_component" File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_DEVIDE.v Line: 62
+Info (12130): Elaborated megafunction instantiation "ALU_DEVIDE:inst18|lpm_divide:LPM_DIVIDE_component" File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_DEVIDE.v Line: 62
+Info (12133): Instantiated megafunction "ALU_DEVIDE:inst18|lpm_divide:LPM_DIVIDE_component" with the following parameter: File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_DEVIDE.v Line: 62
     Info (12134): Parameter "lpm_drepresentation" = "SIGNED"
     Info (12134): Parameter "lpm_hint" = "MAXIMIZE_SPEED=6,LPM_REMAINDERPOSITIVE=FALSE"
     Info (12134): Parameter "lpm_nrepresentation" = "SIGNED"
@@ -1762,54 +1853,54 @@ Info (12133): Instantiated megafunction "ALU_DEVIDE:inst18|lpm_divide:LPM_DIVIDE
     Info (12134): Parameter "lpm_widthd" = "32"
     Info (12134): Parameter "lpm_widthn" = "32"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_24u.tdf
-    Info (12023): Found entity 1: lpm_divide_24u File: /home/helium5/Desktop/Processor_Simulation/db/lpm_divide_24u.tdf Line: 25
-Info (12128): Elaborating entity "lpm_divide_24u" for hierarchy "ALU_DEVIDE:inst18|lpm_divide:LPM_DIVIDE_component|lpm_divide_24u:auto_generated" File: /home/helium5/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_divide.tdf Line: 148
+    Info (12023): Found entity 1: lpm_divide_24u File: /home/hamid/Desktop/memari/Processor_Simulation/db/lpm_divide_24u.tdf Line: 25
+Info (12128): Elaborating entity "lpm_divide_24u" for hierarchy "ALU_DEVIDE:inst18|lpm_divide:LPM_DIVIDE_component|lpm_divide_24u:auto_generated" File: /home/hamid/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_divide.tdf Line: 148
 Info (12021): Found 1 design units, including 1 entities, in source file db/abs_divider_5dg.tdf
-    Info (12023): Found entity 1: abs_divider_5dg File: /home/helium5/Desktop/Processor_Simulation/db/abs_divider_5dg.tdf Line: 27
-Info (12128): Elaborating entity "abs_divider_5dg" for hierarchy "ALU_DEVIDE:inst18|lpm_divide:LPM_DIVIDE_component|lpm_divide_24u:auto_generated|abs_divider_5dg:divider" File: /home/helium5/Desktop/Processor_Simulation/db/lpm_divide_24u.tdf Line: 36
+    Info (12023): Found entity 1: abs_divider_5dg File: /home/hamid/Desktop/memari/Processor_Simulation/db/abs_divider_5dg.tdf Line: 27
+Info (12128): Elaborating entity "abs_divider_5dg" for hierarchy "ALU_DEVIDE:inst18|lpm_divide:LPM_DIVIDE_component|lpm_divide_24u:auto_generated|abs_divider_5dg:divider" File: /home/hamid/Desktop/memari/Processor_Simulation/db/lpm_divide_24u.tdf Line: 36
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_1ef.tdf
-    Info (12023): Found entity 1: alt_u_div_1ef File: /home/helium5/Desktop/Processor_Simulation/db/alt_u_div_1ef.tdf Line: 27
-Info (12128): Elaborating entity "alt_u_div_1ef" for hierarchy "ALU_DEVIDE:inst18|lpm_divide:LPM_DIVIDE_component|lpm_divide_24u:auto_generated|abs_divider_5dg:divider|alt_u_div_1ef:divider" File: /home/helium5/Desktop/Processor_Simulation/db/abs_divider_5dg.tdf Line: 35
+    Info (12023): Found entity 1: alt_u_div_1ef File: /home/hamid/Desktop/memari/Processor_Simulation/db/alt_u_div_1ef.tdf Line: 27
+Info (12128): Elaborating entity "alt_u_div_1ef" for hierarchy "ALU_DEVIDE:inst18|lpm_divide:LPM_DIVIDE_component|lpm_divide_24u:auto_generated|abs_divider_5dg:divider|alt_u_div_1ef:divider" File: /home/hamid/Desktop/memari/Processor_Simulation/db/abs_divider_5dg.tdf Line: 35
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_1tc.tdf
-    Info (12023): Found entity 1: add_sub_1tc File: /home/helium5/Desktop/Processor_Simulation/db/add_sub_1tc.tdf Line: 23
-Info (12128): Elaborating entity "add_sub_1tc" for hierarchy "ALU_DEVIDE:inst18|lpm_divide:LPM_DIVIDE_component|lpm_divide_24u:auto_generated|abs_divider_5dg:divider|alt_u_div_1ef:divider|add_sub_1tc:add_sub_0" File: /home/helium5/Desktop/Processor_Simulation/db/alt_u_div_1ef.tdf Line: 35
+    Info (12023): Found entity 1: add_sub_1tc File: /home/hamid/Desktop/memari/Processor_Simulation/db/add_sub_1tc.tdf Line: 23
+Info (12128): Elaborating entity "add_sub_1tc" for hierarchy "ALU_DEVIDE:inst18|lpm_divide:LPM_DIVIDE_component|lpm_divide_24u:auto_generated|abs_divider_5dg:divider|alt_u_div_1ef:divider|add_sub_1tc:add_sub_0" File: /home/hamid/Desktop/memari/Processor_Simulation/db/alt_u_div_1ef.tdf Line: 35
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_2tc.tdf
-    Info (12023): Found entity 1: add_sub_2tc File: /home/helium5/Desktop/Processor_Simulation/db/add_sub_2tc.tdf Line: 23
-Info (12128): Elaborating entity "add_sub_2tc" for hierarchy "ALU_DEVIDE:inst18|lpm_divide:LPM_DIVIDE_component|lpm_divide_24u:auto_generated|abs_divider_5dg:divider|alt_u_div_1ef:divider|add_sub_2tc:add_sub_1" File: /home/helium5/Desktop/Processor_Simulation/db/alt_u_div_1ef.tdf Line: 36
+    Info (12023): Found entity 1: add_sub_2tc File: /home/hamid/Desktop/memari/Processor_Simulation/db/add_sub_2tc.tdf Line: 23
+Info (12128): Elaborating entity "add_sub_2tc" for hierarchy "ALU_DEVIDE:inst18|lpm_divide:LPM_DIVIDE_component|lpm_divide_24u:auto_generated|abs_divider_5dg:divider|alt_u_div_1ef:divider|add_sub_2tc:add_sub_1" File: /home/hamid/Desktop/memari/Processor_Simulation/db/alt_u_div_1ef.tdf Line: 36
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_abs_c4a.tdf
-    Info (12023): Found entity 1: lpm_abs_c4a File: /home/helium5/Desktop/Processor_Simulation/db/lpm_abs_c4a.tdf Line: 25
-Info (12128): Elaborating entity "lpm_abs_c4a" for hierarchy "ALU_DEVIDE:inst18|lpm_divide:LPM_DIVIDE_component|lpm_divide_24u:auto_generated|abs_divider_5dg:divider|lpm_abs_c4a:my_abs_den" File: /home/helium5/Desktop/Processor_Simulation/db/abs_divider_5dg.tdf Line: 36
+    Info (12023): Found entity 1: lpm_abs_c4a File: /home/hamid/Desktop/memari/Processor_Simulation/db/lpm_abs_c4a.tdf Line: 25
+Info (12128): Elaborating entity "lpm_abs_c4a" for hierarchy "ALU_DEVIDE:inst18|lpm_divide:LPM_DIVIDE_component|lpm_divide_24u:auto_generated|abs_divider_5dg:divider|lpm_abs_c4a:my_abs_den" File: /home/hamid/Desktop/memari/Processor_Simulation/db/abs_divider_5dg.tdf Line: 36
 Info (12128): Elaborating entity "LPM_AND" for hierarchy "LPM_AND:inst8"
 Info (12130): Elaborated megafunction instantiation "LPM_AND:inst8"
 Info (12133): Instantiated megafunction "LPM_AND:inst8" with the following parameter:
     Info (12134): Parameter "LPM_SIZE" = "2"
     Info (12134): Parameter "LPM_WIDTH" = "32"
 Warning (12125): Using design file ALU_MIN_MAX_MUX.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: ALU_MIN_MAX_MUX File: /home/helium5/Desktop/Processor_Simulation/ALU_MIN_MAX_MUX.v Line: 39
+    Info (12023): Found entity 1: ALU_MIN_MAX_MUX File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_MIN_MAX_MUX.v Line: 39
 Info (12128): Elaborating entity "ALU_MIN_MAX_MUX" for hierarchy "ALU_MIN_MAX_MUX:inst3"
-Info (12128): Elaborating entity "lpm_mux" for hierarchy "ALU_MIN_MAX_MUX:inst3|lpm_mux:LPM_MUX_component" File: /home/helium5/Desktop/Processor_Simulation/ALU_MIN_MAX_MUX.v Line: 68
-Info (12130): Elaborated megafunction instantiation "ALU_MIN_MAX_MUX:inst3|lpm_mux:LPM_MUX_component" File: /home/helium5/Desktop/Processor_Simulation/ALU_MIN_MAX_MUX.v Line: 68
-Info (12133): Instantiated megafunction "ALU_MIN_MAX_MUX:inst3|lpm_mux:LPM_MUX_component" with the following parameter: File: /home/helium5/Desktop/Processor_Simulation/ALU_MIN_MAX_MUX.v Line: 68
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "ALU_MIN_MAX_MUX:inst3|lpm_mux:LPM_MUX_component" File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_MIN_MAX_MUX.v Line: 68
+Info (12130): Elaborated megafunction instantiation "ALU_MIN_MAX_MUX:inst3|lpm_mux:LPM_MUX_component" File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_MIN_MAX_MUX.v Line: 68
+Info (12133): Instantiated megafunction "ALU_MIN_MAX_MUX:inst3|lpm_mux:LPM_MUX_component" with the following parameter: File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_MIN_MAX_MUX.v Line: 68
     Info (12134): Parameter "lpm_size" = "2"
     Info (12134): Parameter "lpm_type" = "LPM_MUX"
     Info (12134): Parameter "lpm_width" = "32"
     Info (12134): Parameter "lpm_widths" = "1"
 Warning (12125): Using design file ALU_COMPARE.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: ALU_COMPARE File: /home/helium5/Desktop/Processor_Simulation/ALU_COMPARE.v Line: 39
+    Info (12023): Found entity 1: ALU_COMPARE File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_COMPARE.v Line: 39
 Info (12128): Elaborating entity "ALU_COMPARE" for hierarchy "ALU_COMPARE:inst2"
-Info (12128): Elaborating entity "lpm_compare" for hierarchy "ALU_COMPARE:inst2|lpm_compare:LPM_COMPARE_component" File: /home/helium5/Desktop/Processor_Simulation/ALU_COMPARE.v Line: 66
-Info (12130): Elaborated megafunction instantiation "ALU_COMPARE:inst2|lpm_compare:LPM_COMPARE_component" File: /home/helium5/Desktop/Processor_Simulation/ALU_COMPARE.v Line: 66
-Info (12133): Instantiated megafunction "ALU_COMPARE:inst2|lpm_compare:LPM_COMPARE_component" with the following parameter: File: /home/helium5/Desktop/Processor_Simulation/ALU_COMPARE.v Line: 66
+Info (12128): Elaborating entity "lpm_compare" for hierarchy "ALU_COMPARE:inst2|lpm_compare:LPM_COMPARE_component" File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_COMPARE.v Line: 66
+Info (12130): Elaborated megafunction instantiation "ALU_COMPARE:inst2|lpm_compare:LPM_COMPARE_component" File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_COMPARE.v Line: 66
+Info (12133): Instantiated megafunction "ALU_COMPARE:inst2|lpm_compare:LPM_COMPARE_component" with the following parameter: File: /home/hamid/Desktop/memari/Processor_Simulation/ALU_COMPARE.v Line: 66
     Info (12134): Parameter "lpm_representation" = "SIGNED"
     Info (12134): Parameter "lpm_type" = "LPM_COMPARE"
     Info (12134): Parameter "lpm_width" = "32"
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_p1h.tdf
-    Info (12023): Found entity 1: cmpr_p1h File: /home/helium5/Desktop/Processor_Simulation/db/cmpr_p1h.tdf Line: 23
-Info (12128): Elaborating entity "cmpr_p1h" for hierarchy "ALU_COMPARE:inst2|lpm_compare:LPM_COMPARE_component|cmpr_p1h:auto_generated" File: /home/helium5/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_compare.tdf Line: 281
+    Info (12023): Found entity 1: cmpr_p1h File: /home/hamid/Desktop/memari/Processor_Simulation/db/cmpr_p1h.tdf Line: 23
+Info (12128): Elaborating entity "cmpr_p1h" for hierarchy "ALU_COMPARE:inst2|lpm_compare:LPM_COMPARE_component|cmpr_p1h:auto_generated" File: /home/hamid/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_compare.tdf Line: 281
 Info (12128): Elaborating entity "RAM" for hierarchy "RAM:DATA_MEM"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "RAM:DATA_MEM|altsyncram:altsyncram_component" File: /home/helium5/Desktop/Processor_Simulation/RAM.v Line: 85
-Info (12130): Elaborated megafunction instantiation "RAM:DATA_MEM|altsyncram:altsyncram_component" File: /home/helium5/Desktop/Processor_Simulation/RAM.v Line: 85
-Info (12133): Instantiated megafunction "RAM:DATA_MEM|altsyncram:altsyncram_component" with the following parameter: File: /home/helium5/Desktop/Processor_Simulation/RAM.v Line: 85
+Info (12128): Elaborating entity "altsyncram" for hierarchy "RAM:DATA_MEM|altsyncram:altsyncram_component" File: /home/hamid/Desktop/memari/Processor_Simulation/RAM.v Line: 85
+Info (12130): Elaborated megafunction instantiation "RAM:DATA_MEM|altsyncram:altsyncram_component" File: /home/hamid/Desktop/memari/Processor_Simulation/RAM.v Line: 85
+Info (12133): Instantiated megafunction "RAM:DATA_MEM|altsyncram:altsyncram_component" with the following parameter: File: /home/hamid/Desktop/memari/Processor_Simulation/RAM.v Line: 85
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "intended_device_family" = "Cyclone IV GX"
@@ -1825,15 +1916,15 @@ Info (12133): Instantiated megafunction "RAM:DATA_MEM|altsyncram:altsyncram_comp
     Info (12134): Parameter "width_a" = "32"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_kof1.tdf
-    Info (12023): Found entity 1: altsyncram_kof1 File: /home/helium5/Desktop/Processor_Simulation/db/altsyncram_kof1.tdf Line: 34
-Info (12128): Elaborating entity "altsyncram_kof1" for hierarchy "RAM:DATA_MEM|altsyncram:altsyncram_component|altsyncram_kof1:auto_generated" File: /home/helium5/intelFPGA_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+    Info (12023): Found entity 1: altsyncram_kof1 File: /home/hamid/Desktop/memari/Processor_Simulation/db/altsyncram_kof1.tdf Line: 34
+Info (12128): Elaborating entity "altsyncram_kof1" for hierarchy "RAM:DATA_MEM|altsyncram:altsyncram_component|altsyncram_kof1:auto_generated" File: /home/hamid/intelFPGA_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_l0b.tdf
-    Info (12023): Found entity 1: decode_l0b File: /home/helium5/Desktop/Processor_Simulation/db/decode_l0b.tdf Line: 23
-Info (12128): Elaborating entity "decode_l0b" for hierarchy "RAM:DATA_MEM|altsyncram:altsyncram_component|altsyncram_kof1:auto_generated|decode_l0b:decode3" File: /home/helium5/Desktop/Processor_Simulation/db/altsyncram_kof1.tdf Line: 45
+    Info (12023): Found entity 1: decode_l0b File: /home/hamid/Desktop/memari/Processor_Simulation/db/decode_l0b.tdf Line: 23
+Info (12128): Elaborating entity "decode_l0b" for hierarchy "RAM:DATA_MEM|altsyncram:altsyncram_component|altsyncram_kof1:auto_generated|decode_l0b:decode3" File: /home/hamid/Desktop/memari/Processor_Simulation/db/altsyncram_kof1.tdf Line: 45
 Info (12128): Elaborating entity "lpm_mux0" for hierarchy "lpm_mux0:LB_SEL"
-Info (12128): Elaborating entity "lpm_mux" for hierarchy "lpm_mux0:LB_SEL|lpm_mux:LPM_MUX_component" File: /home/helium5/Desktop/Processor_Simulation/lpm_mux0.vhd Line: 105
-Info (12130): Elaborated megafunction instantiation "lpm_mux0:LB_SEL|lpm_mux:LPM_MUX_component" File: /home/helium5/Desktop/Processor_Simulation/lpm_mux0.vhd Line: 105
-Info (12133): Instantiated megafunction "lpm_mux0:LB_SEL|lpm_mux:LPM_MUX_component" with the following parameter: File: /home/helium5/Desktop/Processor_Simulation/lpm_mux0.vhd Line: 105
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "lpm_mux0:LB_SEL|lpm_mux:LPM_MUX_component" File: /home/hamid/Desktop/memari/Processor_Simulation/lpm_mux0.vhd Line: 105
+Info (12130): Elaborated megafunction instantiation "lpm_mux0:LB_SEL|lpm_mux:LPM_MUX_component" File: /home/hamid/Desktop/memari/Processor_Simulation/lpm_mux0.vhd Line: 105
+Info (12133): Instantiated megafunction "lpm_mux0:LB_SEL|lpm_mux:LPM_MUX_component" with the following parameter: File: /home/hamid/Desktop/memari/Processor_Simulation/lpm_mux0.vhd Line: 105
     Info (12134): Parameter "LPM_WIDTH" = "8"
     Info (12134): Parameter "LPM_SIZE" = "4"
     Info (12134): Parameter "LPM_WIDTHS" = "2"
@@ -1841,50 +1932,40 @@ Info (12133): Instantiated megafunction "lpm_mux0:LB_SEL|lpm_mux:LPM_MUX_compone
     Info (12134): Parameter "LPM_TYPE" = "LPM_MUX"
     Info (12134): Parameter "LPM_HINT" = "UNUSED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_mbe.tdf
-    Info (12023): Found entity 1: mux_mbe File: /home/helium5/Desktop/Processor_Simulation/db/mux_mbe.tdf Line: 23
-Info (12128): Elaborating entity "mux_mbe" for hierarchy "lpm_mux0:LB_SEL|lpm_mux:LPM_MUX_component|mux_mbe:auto_generated" File: /home/helium5/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
+    Info (12023): Found entity 1: mux_mbe File: /home/hamid/Desktop/memari/Processor_Simulation/db/mux_mbe.tdf Line: 23
+Info (12128): Elaborating entity "mux_mbe" for hierarchy "lpm_mux0:LB_SEL|lpm_mux:LPM_MUX_component|mux_mbe:auto_generated" File: /home/hamid/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
 Info (12128): Elaborating entity "BUSMUX" for hierarchy "BUSMUX:SING_EXTEND_2"
 Info (12130): Elaborated megafunction instantiation "BUSMUX:SING_EXTEND_2"
 Info (12133): Instantiated megafunction "BUSMUX:SING_EXTEND_2" with the following parameter:
     Info (12134): Parameter "WIDTH" = "24"
-Info (12128): Elaborating entity "lpm_mux" for hierarchy "BUSMUX:SING_EXTEND_2|lpm_mux:$00000" File: /home/helium5/intelFPGA_lite/20.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
-Info (12131): Elaborated megafunction instantiation "BUSMUX:SING_EXTEND_2|lpm_mux:$00000", which is child of megafunction instantiation "BUSMUX:SING_EXTEND_2" File: /home/helium5/intelFPGA_lite/20.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "BUSMUX:SING_EXTEND_2|lpm_mux:$00000" File: /home/hamid/intelFPGA_lite/20.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
+Info (12131): Elaborated megafunction instantiation "BUSMUX:SING_EXTEND_2|lpm_mux:$00000", which is child of megafunction instantiation "BUSMUX:SING_EXTEND_2" File: /home/hamid/intelFPGA_lite/20.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_m0d.tdf
-    Info (12023): Found entity 1: mux_m0d File: /home/helium5/Desktop/Processor_Simulation/db/mux_m0d.tdf Line: 23
-Info (12128): Elaborating entity "mux_m0d" for hierarchy "BUSMUX:SING_EXTEND_2|lpm_mux:$00000|mux_m0d:auto_generated" File: /home/helium5/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
+    Info (12023): Found entity 1: mux_m0d File: /home/hamid/Desktop/memari/Processor_Simulation/db/mux_m0d.tdf Line: 23
+Info (12128): Elaborating entity "mux_m0d" for hierarchy "BUSMUX:SING_EXTEND_2|lpm_mux:$00000|mux_m0d:auto_generated" File: /home/hamid/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
 Info (12128): Elaborating entity "lpm_compare0" for hierarchy "lpm_compare0:inst"
-Info (12128): Elaborating entity "lpm_compare" for hierarchy "lpm_compare0:inst|lpm_compare:LPM_COMPARE_component" File: /home/helium5/Desktop/Processor_Simulation/lpm_compare0.vhd Line: 78
-Info (12130): Elaborated megafunction instantiation "lpm_compare0:inst|lpm_compare:LPM_COMPARE_component" File: /home/helium5/Desktop/Processor_Simulation/lpm_compare0.vhd Line: 78
-Info (12133): Instantiated megafunction "lpm_compare0:inst|lpm_compare:LPM_COMPARE_component" with the following parameter: File: /home/helium5/Desktop/Processor_Simulation/lpm_compare0.vhd Line: 78
+Info (12128): Elaborating entity "lpm_compare" for hierarchy "lpm_compare0:inst|lpm_compare:LPM_COMPARE_component" File: /home/hamid/Desktop/memari/Processor_Simulation/lpm_compare0.vhd Line: 78
+Info (12130): Elaborated megafunction instantiation "lpm_compare0:inst|lpm_compare:LPM_COMPARE_component" File: /home/hamid/Desktop/memari/Processor_Simulation/lpm_compare0.vhd Line: 78
+Info (12133): Instantiated megafunction "lpm_compare0:inst|lpm_compare:LPM_COMPARE_component" with the following parameter: File: /home/hamid/Desktop/memari/Processor_Simulation/lpm_compare0.vhd Line: 78
     Info (12134): Parameter "lpm_representation" = "UNSIGNED"
     Info (12134): Parameter "lpm_type" = "LPM_COMPARE"
     Info (12134): Parameter "lpm_width" = "32"
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_g5h.tdf
-    Info (12023): Found entity 1: cmpr_g5h File: /home/helium5/Desktop/Processor_Simulation/db/cmpr_g5h.tdf Line: 23
-Info (12128): Elaborating entity "cmpr_g5h" for hierarchy "lpm_compare0:inst|lpm_compare:LPM_COMPARE_component|cmpr_g5h:auto_generated" File: /home/helium5/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_compare.tdf Line: 281
+    Info (12023): Found entity 1: cmpr_g5h File: /home/hamid/Desktop/memari/Processor_Simulation/db/cmpr_g5h.tdf Line: 23
+Info (12128): Elaborating entity "cmpr_g5h" for hierarchy "lpm_compare0:inst|lpm_compare:LPM_COMPARE_component|cmpr_g5h:auto_generated" File: /home/hamid/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_compare.tdf Line: 281
 Info (12128): Elaborating entity "lpm_add_sub0" for hierarchy "lpm_add_sub0:PC_INC33"
-Info (12128): Elaborating entity "lpm_add_sub" for hierarchy "lpm_add_sub0:PC_INC33|lpm_add_sub:LPM_ADD_SUB_component" File: /home/helium5/Desktop/Processor_Simulation/lpm_add_sub0.vhd Line: 76
-Info (12130): Elaborated megafunction instantiation "lpm_add_sub0:PC_INC33|lpm_add_sub:LPM_ADD_SUB_component" File: /home/helium5/Desktop/Processor_Simulation/lpm_add_sub0.vhd Line: 76
-Info (12133): Instantiated megafunction "lpm_add_sub0:PC_INC33|lpm_add_sub:LPM_ADD_SUB_component" with the following parameter: File: /home/helium5/Desktop/Processor_Simulation/lpm_add_sub0.vhd Line: 76
+Info (12128): Elaborating entity "lpm_add_sub" for hierarchy "lpm_add_sub0:PC_INC33|lpm_add_sub:LPM_ADD_SUB_component" File: /home/hamid/Desktop/memari/Processor_Simulation/lpm_add_sub0.vhd Line: 76
+Info (12130): Elaborated megafunction instantiation "lpm_add_sub0:PC_INC33|lpm_add_sub:LPM_ADD_SUB_component" File: /home/hamid/Desktop/memari/Processor_Simulation/lpm_add_sub0.vhd Line: 76
+Info (12133): Instantiated megafunction "lpm_add_sub0:PC_INC33|lpm_add_sub:LPM_ADD_SUB_component" with the following parameter: File: /home/hamid/Desktop/memari/Processor_Simulation/lpm_add_sub0.vhd Line: 76
     Info (12134): Parameter "lpm_direction" = "ADD"
     Info (12134): Parameter "lpm_hint" = "ONE_INPUT_IS_CONSTANT=NO,CIN_USED=NO"
     Info (12134): Parameter "lpm_representation" = "SIGNED"
     Info (12134): Parameter "lpm_type" = "LPM_ADD_SUB"
     Info (12134): Parameter "lpm_width" = "32"
-Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:WB_REG"
-Info (12130): Elaborated megafunction instantiation "LPM_FF:WB_REG"
-Info (12133): Instantiated megafunction "LPM_FF:WB_REG" with the following parameter:
-    Info (12134): Parameter "LPM_FFTYPE" = "DFF"
-    Info (12134): Parameter "LPM_WIDTH" = "5"
-Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:WB_REG_2"
-Info (12130): Elaborated megafunction instantiation "LPM_FF:WB_REG_2"
-Info (12133): Instantiated megafunction "LPM_FF:WB_REG_2" with the following parameter:
-    Info (12134): Parameter "LPM_FFTYPE" = "DFF"
-    Info (12134): Parameter "LPM_WIDTH" = "5"
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 952 megabytes
-    Info: Processing ended: Tue Feb  9 02:35:43 2021
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:26
+    Info: Peak virtual memory: 921 megabytes
+    Info: Processing ended: Tue Feb  9 12:10:04 2021
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:32
 
 
